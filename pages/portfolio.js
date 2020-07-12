@@ -1,3 +1,7 @@
-const Portfolio = () => <h1>Portfolio Page</h1>
+import BaseLayout from '../components/BaseLayout'
+
+const Portfolio = () => (
+  <BaseLayout></BaseLayout>
+)
 
 export default Portfolio

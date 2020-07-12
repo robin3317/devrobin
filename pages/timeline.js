@@ -1,3 +1,7 @@
-const Timeline = () => <h1>Timeline Page</h1>
+import BaseLayout from '../components/BaseLayout'
+
+const Timeline = () => (
+  <BaseLayout></BaseLayout>
+)
 
 export default Timeline

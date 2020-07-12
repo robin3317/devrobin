@@ -1,3 +1,7 @@
-const About = () => <h1>About Page</h1>
+import BaseLayout from '../components/BaseLayout'
+
+const About = () => (
+  <BaseLayout></BaseLayout>
+)
 
 export default About

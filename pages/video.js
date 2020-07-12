@@ -1,3 +1,7 @@
-const Video = () => <h1>Video Page</h1>
+import BaseLayout from '../components/BaseLayout'
+
+const Video = () => (
+  <BaseLayout></BaseLayout>
+)
 
 export default Video

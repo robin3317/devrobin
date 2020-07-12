@@ -1,3 +1,7 @@
-const Blog = () => <h1>Blog Page</h1>
+import BaseLayout from '../components/BaseLayout'
+
+const Blog = () => (
+  <BaseLayout></BaseLayout>
+)
 
 export default Blog

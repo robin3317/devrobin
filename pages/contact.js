@@ -1,3 +1,7 @@
-const Contact = () => <h1>Contact Page</h1>
+import BaseLayout from '../components/BaseLayout'
+
+const Contact = () => (
+  <BaseLayout></BaseLayout>
+)
 
 export default Contact

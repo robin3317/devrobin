@@ -3,14 +3,15 @@ import BaseLayout from '../components/BaseLayout'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Abdur Rahman Robin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <BaseLayout />
+        <BaseLayout>
+        </BaseLayout>
       </main>
 
       <footer>
