@@ -27,7 +27,48 @@ export default function Home() {
             </HomeLeftContainer>
 
             <HomeRightContainer>
+              <Intro>
+                <div>
+                  <p>Class Myself {'{'}</p>
+                    <p style={{paddingLeft: 30}}>constructor() {'{'}</p>
+                      <p style={{paddingLeft: 60}}>this.name = 'Abdur Rahman Robin';</p>
+                      <p style={{paddingLeft: 60}}>this.companyName = 'Corona Engineering Ltd.';</p>
+                    <p style={{paddingLeft: 30}}>{'}'}</p>
+                  <p>{'}'}</p>
+                </div>
+              </Intro>
 
+              <Description>
+                <p><span style={{color: '#1078EE'}}>console.log(</span>{"`"}Hello &amp;
+                Welcome, my name is <span style={{color: '#D89024'}}>{"${this.name}"}</span>. I'm a
+                full stack software developer working in <span style={{color: '#D89024'}}>{"${this.companyName}"}</span>.
+                I love to convert my thoughts into code. And love to share my
+                knowledge with others. \n<br />
+                If you have a project or creative need that I can help with,
+                please feel free to contact.{"`"}<span style={{color: '#1078EE'}}>)</span>;</p>
+              </Description>
+
+              <ContactContainer>
+                <ContactItem target="_blank" href="mailto:abdurrahmanrobin47@gmail.com">
+                  <img align="left" alt="Abdur Rahman Robin | Gmail" src="https://img.icons8.com/color/40/000000/gmail.png" />
+                </ContactItem>
+
+                <ContactItem target="_blank" href="https://www.github.com/robin3317">
+                  <img align="left" alt="Abdur Rahman Robin | Github" src="https://img.icons8.com/fluent/40/000000/github.png" />
+                </ContactItem>
+
+                <ContactItem target="_blank" href="https://www.linkedin.com/in/robin4java/">
+                  <img align="left" alt="Abdur Rahman Robin | Linkedin" src="https://img.icons8.com/color/40/000000/linkedin.png" />
+                </ContactItem>
+
+                <ContactItem target="_blank" href="https://twitter.com/robin4java">
+                  <img align="left" alt="Abdur Rahman Robin | Twitter" src="https://img.icons8.com/color/40/000000/twitter.png" />
+                </ContactItem>
+
+                <ContactItem target="_blank" href="https://fb.com/robin4java">
+                  <img align="left" alt="Abdur Rahman Robin | Facebook" src="https://img.icons8.com/color/40/000000/facebook-new.png" />
+                </ContactItem>
+              </ContactContainer>
             </HomeRightContainer>
           </HomeContainer>
         </BaseLayout>
@@ -54,14 +95,17 @@ export default function Home() {
 }
 
 
-const HomeContainer = styled.div``
+const HomeContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+`
 
 const HomeLeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 45%;
 `
-const HomeRightContainer = styled.div``
 
 const InfoContainer = styled.div`
   margin: 0 auto;
@@ -103,4 +147,30 @@ const Resume = styled.button`
   padding: 7px 10px;
   border-radius: 3px;
   cursor: pointer;
+`
+
+const HomeRightContainer = styled.div`
+  width: 50%;
+`
+
+const Intro = styled.div`
+  color: #48586B;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+`
+
+const Description = styled.div`
+  color: #48586B;
+  font-weight: 500;
+`
+
+const ContactContainer = styled.div`
+  display: flex;
+  margin-top: 30px;
+`
+
+const ContactItem = styled.a`
+ margin-right: 20px;
 `
