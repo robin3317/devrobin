@@ -1,13 +1,20 @@
 import styled from 'styled-components'
+import Head from 'next/head'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
 
 const About = () => (
-  <BaseLayout>
-    <AboutContainer>
-      <SectionTitle title="About" />
-    </AboutContainer>
-  </BaseLayout>
+  <>
+    <Head>
+      <title>Robin | About Me</title>
+    </Head>
+
+    <BaseLayout>
+      <AboutContainer>
+        <SectionTitle title="About" />
+      </AboutContainer>
+    </BaseLayout>
+  </>
 )
 
 const AboutContainer = styled.div`

@@ -1,13 +1,20 @@
 import styled from 'styled-components'
+import Head from 'next/head'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
 
 const Video = () => (
-  <BaseLayout>
-    <VideoContainer>
-      <SectionTitle title="Video" />
-    </VideoContainer>
-  </BaseLayout>
+  <>
+    <Head>
+      <title>Robin | Portfolio</title>
+    </Head>
+
+    <BaseLayout>
+      <VideoContainer>
+        <SectionTitle title="Video" />
+      </VideoContainer>
+    </BaseLayout>
+  </>
 )
 
 const VideoContainer = styled.div`

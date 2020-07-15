@@ -1,13 +1,20 @@
 import styled from 'styled-components'
+import Head from 'next/head'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
 
 const Contact = () => (
-  <BaseLayout>
-    <ContactContainer>
-      <SectionTitle title="Contact" />
-    </ContactContainer>
-  </BaseLayout>
+  <>
+    <Head>
+      <title>Robin | Contact</title>
+    </Head>
+
+    <BaseLayout>
+      <ContactContainer>
+        <SectionTitle title="Contact" />
+      </ContactContainer>
+    </BaseLayout>
+  </>
 )
 
 const ContactContainer = styled.div`
