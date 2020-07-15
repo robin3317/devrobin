@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-export const SectionTitleContainer = styled.div``
+export const SectionTitleContainer = styled.div`
+  margin-bottom: 5px;
+`
 
 export const BorderBottom = styled.div`
   width: 60%;

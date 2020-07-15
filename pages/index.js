@@ -16,7 +16,7 @@ export default function Home() {
             <HomeLeftContainer>
               <TriangleWrapper>
                 <Triangle />
-                <Avatar src="/images/avatar.jpg" />
+                <Avatar src="/images/avatar.jpg" alt="Abdur Rahman Robin | Codeonces" />
               </TriangleWrapper>
 
               <InfoContainer>
@@ -74,22 +74,6 @@ export default function Home() {
         </BaseLayout>
       </main>
 
-      <style jsx global>
-        {`
-          html,
-          body {
-            padding: 0;
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
-          }
-
-          * {
-            box-sizing: border-box;
-          }
-        `}
-      </style>
     </div>
   )
 }
@@ -130,13 +114,10 @@ const Avatar = styled.img`
   border-radius: 100%;
 `
 
-const Name = styled.h1`
-  color: #48586B;
-`
+const Name = styled.h1``
 
 const Designation = styled.h2`
   font-size: 1.37em;
-  color: #48586B;
 `
 
 const Resume = styled.button`
@@ -154,16 +135,13 @@ const HomeRightContainer = styled.div`
 `
 
 const Intro = styled.div`
-  color: #48586B;
-  font-weight: 500;
   display: flex;
   justify-content: center;
   margin: 60px 0;
 `
 
 const Description = styled.div`
-  color: #48586B;
-  font-weight: 500;
+  line-height: 1.8;
 `
 
 const ContactContainer = styled.div`
