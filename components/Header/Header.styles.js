@@ -26,8 +26,10 @@ export const HeaderLeft = styled.div``
 export const HeaderRight = styled.div``
 
 export const NavItem = styled.a`
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
   text-decoration: none;
-  margin-left: 40px;
   color: #1078EE;
   font-weight: 500;
   &:visited, &:focus {
