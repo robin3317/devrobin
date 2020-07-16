@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Head from 'next/head'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
+import Skillset from '../components/Skillset'
 
 const About = () => (
   <>
@@ -40,6 +41,31 @@ const About = () => (
           </RightIntro>
 
         </Introduction>
+
+        <SkillsetsContainer>
+          <SectionHeader>My Skillsets</SectionHeader>
+
+          <Skillsets>
+            <Development>
+              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" title="Javascript" />
+              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" title="Typescript" />
+              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" title="ReactJS" />
+              <Skillset imgSrc="https://redux.js.org/img/redux.svg" title="Redux" />
+              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png" title="GraphQL" />
+              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" title="Node" />
+              <Skillset imgSrc="https://deno.land/logo.svg" title="Deno" />
+              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png" title="Flutter" />
+              <Skillset imgSrc="https://reactnative.dev/img/header_logo.svg" title="React Native" />
+              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" title="Firebase" />
+            </Development>
+
+            <Design>
+              <Skillset imgSrc="https://www.adobe.com/content/dam/cc/icons/xd.svg" title="Adobe XD" />
+              <Skillset imgSrc="https://www.adobe.com/content/dam/cc/icons/photoshop-mobile.svg" title="Photoshop" />
+              <Skillset imgSrc="https://www.adobe.com/content/dam/cc/icons/pr_cc_app_RGB.svg" title="Premier Pro" />
+            </Design>
+          </Skillsets>
+        </SkillsetsContainer>
       </AboutContainer>
     </BaseLayout>
   </>
@@ -54,6 +80,7 @@ const Introduction = styled.div`
   display: flex;
   justify-content: space-between;
 `
+
 const LeftIntro = styled.div`
   width: 52%;
   line-height: 1.8;
@@ -65,6 +92,7 @@ const RightIntro = styled.div`
   align-items: center;
   width: 40%;
 `
+
 const AvatarContainer = styled.div`
   position: relative;
 `
@@ -101,6 +129,33 @@ const VerticalHr = styled.div`
   width: 5px;
   height: 30px;
   margin-right: 20px;
+`
+
+const SkillsetsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+`
+
+const Skillsets = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const sectionStyles = css`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`
+
+const Development = styled.div`${sectionStyles}`
+
+const Design = styled.div`${sectionStyles}`
+
+const SectionHeader = styled.h3`
+  font-size: 32px;
+  font-weight: 500;
 `
 
 export default About
