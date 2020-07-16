@@ -3,6 +3,7 @@ import Head from 'next/head'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
 import Skillset from '../components/Skillset'
+import Card from '../components/Card'
 
 const About = () => (
   <>
@@ -66,6 +67,16 @@ const About = () => (
             </Design>
           </Skillsets>
         </SkillsetsContainer>
+
+        <ServiceContainer>
+          <SectionHeader>Service Offers</SectionHeader>
+
+          <Card width="300" height="300">
+            <CardIcon src="./images/s1.png" alt="web development" />
+            <CardTitle>WEB DEVELOPMENT</CardTitle>
+            <CardDescription>Any kind of web application you want to build.</CardDescription>
+          </Card>
+        </ServiceContainer>
       </AboutContainer>
     </BaseLayout>
   </>
@@ -157,5 +168,15 @@ const SectionHeader = styled.h3`
   font-size: 32px;
   font-weight: 500;
 `
+
+const ServiceContainer = styled.div`
+  margin-top: 20px;
+`
+
+const CardIcon = styled.img``
+
+const CardTitle = styled.p``
+
+const CardDescription = styled.p``
 
 export default About
