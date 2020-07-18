@@ -71,12 +71,42 @@ const About = () => (
         <ServiceContainer>
           <SectionHeader>Service Offers</SectionHeader>
 
-          <Card width="300" height="300">
-            <CardIcon src="./images/s1.png" alt="web development" />
-            <CardTitle>WEB DEVELOPMENT</CardTitle>
-            <CardDescription>Any kind of web application you want to build.</CardDescription>
-          </Card>
+          <ServiceCardContainer>
+            <Card width="23%" maxWidth="300px" style={{marginRight: "1.25%"}}>
+              <ServiceOfferCardContainer>
+                <CardIcon src="./images/s1.png" alt="web development" />
+                <CardTitle>WEB DEVELOPMENT</CardTitle>
+                <CardDescription>Any kind of web application you want to build.</CardDescription>
+              </ServiceOfferCardContainer>
+            </Card>
+
+            <Card width="23%" maxWidth="300px" style={{marginRight: "1.25%"}}>
+              <ServiceOfferCardContainer>
+                <CardIcon src="./images/s2.png" alt="web development" />
+                <CardTitle>WEB DEVELOPMENT</CardTitle>
+                <CardDescription>Any kind of web application you want to build.</CardDescription>
+              </ServiceOfferCardContainer>
+            </Card>
+
+            <Card width="23%" maxWidth="300px" style={{marginRight: "1.25%"}}>
+              <ServiceOfferCardContainer>
+                <CardIcon src="./images/s3.png" alt="web development" />
+                <CardTitle>WEB DEVELOPMENT</CardTitle>
+                <CardDescription>Any kind of web application you want to build.</CardDescription>
+              </ServiceOfferCardContainer>
+            </Card>
+
+            <Card width="23%" maxWidth="300px">
+              <ServiceOfferCardContainer>
+                <CardIcon src="./images/s4.png" alt="web development" />
+                <CardTitle>WEB DEVELOPMENT</CardTitle>
+                <CardDescription>Any kind of web application you want to build.</CardDescription>
+              </ServiceOfferCardContainer>
+            </Card>
+          </ServiceCardContainer>
         </ServiceContainer>
+
+        <h1>Another Section Will Start From Here...</h1>
       </AboutContainer>
     </BaseLayout>
   </>
@@ -171,6 +201,23 @@ const SectionHeader = styled.h3`
 
 const ServiceContainer = styled.div`
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const ServiceCardContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+`
+
+const ServiceOfferCardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 
 const CardIcon = styled.img``

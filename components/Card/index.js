@@ -1,9 +1,10 @@
 import { CardContainer } from './Card.Styles'
 
-const Card = props => (
-  <CardContainer width={props.width} height={props.height}>
+const Card = props => {
+  return(
+  <CardContainer {...props}>
     {props.children}
   </CardContainer>
-)
+)}
 
 export default Card
