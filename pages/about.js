@@ -72,7 +72,7 @@ const About = () => (
           <SectionHeader>Service Offers</SectionHeader>
 
           <ServiceCardContainer>
-            <Card width="23%" maxWidth="300px" style={{marginRight: "1.25%"}}>
+            <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s1.png" alt="web development" />
                 <CardTitle>WEB DEVELOPMENT</CardTitle>
@@ -80,7 +80,7 @@ const About = () => (
               </ServiceOfferCardContainer>
             </Card>
 
-            <Card width="23%" maxWidth="300px" style={{marginRight: "1.25%"}}>
+            <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s2.png" alt="web development" />
                 <CardTitle>WEB DEVELOPMENT</CardTitle>
@@ -88,7 +88,7 @@ const About = () => (
               </ServiceOfferCardContainer>
             </Card>
 
-            <Card width="23%" maxWidth="300px" style={{marginRight: "1.25%"}}>
+            <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s3.png" alt="web development" />
                 <CardTitle>WEB DEVELOPMENT</CardTitle>
@@ -96,7 +96,7 @@ const About = () => (
               </ServiceOfferCardContainer>
             </Card>
 
-            <Card width="23%" maxWidth="300px">
+            <Card width="23.50%" maxWidth="300px">
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s4.png" alt="web development" />
                 <CardTitle>WEB DEVELOPMENT</CardTitle>
@@ -106,11 +106,109 @@ const About = () => (
           </ServiceCardContainer>
         </ServiceContainer>
 
-        <h1>Another Section Will Start From Here...</h1>
+        <FeedbackContainer>
+          <SectionHeader>Some Positive Feedback That Encourage Me</SectionHeader>
+
+          <FeedbackCardContainer>
+            <Card width="30%" maxWidth="620px" style={{marginRight: '5%'}}>
+                <FeedbackHeader>
+                  <FeedbackAvatar src="/images/avatar_robin.png" />
+                  <FeedbackIntro>
+                    <FeedbackName>Bradley Erickson</FeedbackName>
+                    <FeedbackDesignation>UI/UX Designer</FeedbackDesignation>
+                    <FeedbackCompany>XYZ Company</FeedbackCompany>
+                  </FeedbackIntro>
+                </FeedbackHeader>
+
+                <FeedbackDescription>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </FeedbackDescription>
+            </Card>
+
+            <Card width="30%" maxWidth="620px" style={{marginRight: '5%'}}>
+              <FeedbackHeader>
+                <FeedbackAvatar src="/images/avatar_robin.png" />
+                <FeedbackIntro>
+                  <FeedbackName>Bradley Erickson</FeedbackName>
+                  <FeedbackDesignation>UI/UX Designer</FeedbackDesignation>
+                  <FeedbackCompany>XYZ Company</FeedbackCompany>
+                </FeedbackIntro>
+              </FeedbackHeader>
+
+              <FeedbackDescription>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </FeedbackDescription>
+            </Card>
+
+            <Card width="30%" maxWidth="620px">
+              <FeedbackHeader>
+                <FeedbackAvatar src="/images/avatar_robin.png" />
+                <FeedbackIntro>
+                  <FeedbackName>Bradley Erickson</FeedbackName>
+                  <FeedbackDesignation>UI/UX Designer</FeedbackDesignation>
+                  <FeedbackCompany>XYZ Company</FeedbackCompany>
+                </FeedbackIntro>
+              </FeedbackHeader>
+
+              <FeedbackDescription>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </FeedbackDescription>
+            </Card>
+          </FeedbackCardContainer>
+        </FeedbackContainer>
       </AboutContainer>
     </BaseLayout>
   </>
 )
+
+const FeedbackContainer = styled.div`
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const FeedbackCardContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+`
+
+const FeedbackHeader = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+const FeedbackAvatar = styled.img`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+`
+
+const FeedbackIntro = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const FeedbackName = styled.h4`
+  margin: 0;
+`
+
+const FeedbackDesignation = styled.p`
+  margin: 0;
+`
+
+const FeedbackCompany = styled.p`
+  margin: 0;
+`
+
+const FeedbackDescription = styled.p``
 
 const AboutContainer = styled.div`
   width: 80%;
@@ -200,7 +298,7 @@ const SectionHeader = styled.h3`
 `
 
 const ServiceContainer = styled.div`
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

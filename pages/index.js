@@ -16,7 +16,7 @@ export default function Home() {
             <HomeLeftContainer>
               <TriangleWrapper>
                 <Triangle />
-                <Avatar src="/images/avatar.jpg" alt="Abdur Rahman Robin | Codeonces" />
+                <Avatar src="/images/avatar_robin.png" alt="Abdur Rahman Robin | Codeonces" />
               </TriangleWrapper>
 
               <InfoContainer>
@@ -112,6 +112,8 @@ const TriangleWrapper = styled.div`
 const Avatar = styled.img`
   position: absolute;
   border-radius: 100%;
+  width: 280px;
+  height: 280px;
 `
 
 const Name = styled.h1``
