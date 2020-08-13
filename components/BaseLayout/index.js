@@ -1,8 +1,11 @@
 import Header from '../Header'
-import { BaseLayoutContainer } from './BaseLayout.styles'
+import { BaseLayoutContainer, TemporaryInfo } from './BaseLayout.styles'
 
 const BaseLayout = props => (
   <>
+    <TemporaryInfo>
+      <p>📢 I'm currently working on this project. Some features may not work as you expect! Sorry 🙏</p>
+    </TemporaryInfo>
     <Header />
     <BaseLayoutContainer>
       {props.children}

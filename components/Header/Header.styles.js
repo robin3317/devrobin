@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
   position: fixed;
-  top: 0px;
+  top: 25px;
   display: flex;
   -webkit-box-align: center;
   justify-content: center;
