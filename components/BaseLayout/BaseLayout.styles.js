@@ -14,6 +14,5 @@ export const TemporaryInfo = styled.div`
   color: white;
   font-size: 14px;
   display: flex;
-  align-items: center;
   justify-content: center;
 `
