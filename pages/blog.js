@@ -19,7 +19,7 @@ const Blog = () => (
 
 const BlogContainer = styled.div`
   width: 80%;
-  margin: 80px auto 0;
+  margin: 105px auto 0;
 `
 
 export default Blog

@@ -212,7 +212,7 @@ const FeedbackDescription = styled.p``
 
 const AboutContainer = styled.div`
   width: 80%;
-  margin: 80px auto 0;
+  margin: 105px auto 0;
 `
 
 const Introduction = styled.div`

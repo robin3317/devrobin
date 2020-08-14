@@ -28,6 +28,11 @@ const BaseLayout = props => (
         * {
           box-sizing: border-box;
         }
+
+        /* CUSTOM LINE COLOR */
+        .vertical-timeline::before {
+          background: #ccc;
+        }
       `}
     </style>
   </>

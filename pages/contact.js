@@ -19,7 +19,7 @@ const Contact = () => (
 
 const ContactContainer = styled.div`
   width: 80%;
-  margin: 80px auto 0;
+  margin: 105px auto 0;
 `
 
 export default Contact
