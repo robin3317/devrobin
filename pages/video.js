@@ -12,6 +12,23 @@ const Video = () => (
     <BaseLayout>
       <VideoContainer>
         <SectionTitle title="Video" />
+
+        <VideoBody>
+          <h3 style={{ fontSize: '22px', marginTop: '50px', marginBottom: '20px' }}>LATEST VIDEOS I UPLOADED ON YOUTUBE</h3>
+          <LatestVideoContainer>
+            <iframe width="32%" frameBorder="0" src="https://www.youtube.com/embed/83g6rPtJtno"></iframe>
+            <iframe width="32%" height="300" frameBorder="0" src="https://www.youtube.com/embed/uRYpG2cGvy0"></iframe>
+            <iframe width="32%" height="300" frameBorder="0" src="https://www.youtube.com/embed/jmrd0Drz31A"></iframe>
+          </LatestVideoContainer>
+
+          <h3 style={{ fontSize: '22px', marginTop: '50px', marginBottom: '20px' }}>FLUTTER TUTORIAL BANGLA - FLUTTER ZERO TO INFINITY</h3>
+          <iframe width="50%" height="300" frameBorder="0" src="https://www.youtube.com/embed/videoseries?list=PLAqczZ5-OdVKJOBskWc_zjsJFwcRlEkzO"></iframe>
+          <SizedBox />
+
+          <h3 style={{ fontSize: '22px', marginTop: '50px', marginBottom: '20px' }}>WEB DEVELOPMENT BANGLA - ZERO TO INFINITY</h3>
+          <iframe width="50%" height="300" frameBorder="0" src="https://www.youtube.com/embed/videoseries?list=PLAqczZ5-OdVKXIEoVfggw2OMZto4Oew2B"></iframe>
+          <SizedBox />
+        </VideoBody>
       </VideoContainer>
     </BaseLayout>
   </>
@@ -20,6 +37,23 @@ const Video = () => (
 const VideoContainer = styled.div`
   width: 80%;
   margin: 105px auto 0;
+`
+
+const VideoBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const LatestVideoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`
+
+const SizedBox = styled.div`
+  width: 100%;
+  height: 30px;
 `
 
 export default Video

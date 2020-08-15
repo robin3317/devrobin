@@ -106,7 +106,7 @@ const About = () => (
           </ServiceCardContainer>
         </ServiceContainer>
 
-        <FeedbackContainer>
+        {/* <FeedbackContainer>
           <SectionHeader>Some Positive Feedback That Encourage Me</SectionHeader>
 
           <FeedbackCardContainer>
@@ -158,15 +158,15 @@ const About = () => (
               </FeedbackDescription>
             </Card>
           </FeedbackCardContainer>
-        </FeedbackContainer>
+        </FeedbackContainer> */}
       </AboutContainer>
     </BaseLayout>
   </>
 )
 
 const FeedbackContainer = styled.div`
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,6 +177,7 @@ const FeedbackCardContainer = styled.div`
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 `
 
 const FeedbackHeader = styled.div`
@@ -251,7 +252,9 @@ const Avatar = styled.img`
   height: 330px;
 `
 
-const Name = styled.h1``
+const Name = styled.h1`
+  font-size: 36px;
+`
 
 const Designation = styled.h2`
   font-size: 1.37em;
@@ -274,7 +277,7 @@ const SkillsetsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 `
 
 const Skillsets = styled.div`
@@ -299,6 +302,7 @@ const SectionHeader = styled.h3`
 
 const ServiceContainer = styled.div`
   margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,6 +313,7 @@ const ServiceCardContainer = styled.div`
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 `
 
 const ServiceOfferCardContainer = styled.div`

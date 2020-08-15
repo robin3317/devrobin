@@ -12,6 +12,9 @@ const Blog = () => (
     <BaseLayout>
       <BlogContainer>
         <SectionTitle title="Blog" />
+        <div style={{ width: '100%', height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <h2>COMING SOON!</h2>
+        </div>
       </BlogContainer>
     </BaseLayout>
   </>

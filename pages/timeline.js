@@ -18,7 +18,7 @@ const Timeline = () => (
         <SectionTitle title="Timeline" />
 
         <TimelineBody>
-          <h3>MY ROAD TO GLORY!</h3>
+          <h3 style={{ fontSize: '22px' }}>MY ROAD TO GLORY!</h3>
           <p style={{textAlign: 'center'}}>
             Below you can see a timeline of my professional accomplishments along with some educational accomplishments.
             I hope that will motivate you to follow your dreams and to write down your own accomplishments
@@ -36,8 +36,8 @@ const Timeline = () => (
               icon={<FontAwesomeIcon icon={faBriefcase} />}
             >
               <CustomTimelineTag bgColor="rgb(33, 150, 243)">JOB</CustomTimelineTag>
-              <h3 className="vertical-timeline-element-title">Software Developer</h3>
-              <h4 className="vertical-timeline-element-subtitle">Corona Engineering Ltd.</h4>
+              <Title className="vertical-timeline-element-title">Software Developer</Title>
+              <Subtitle className="vertical-timeline-element-subtitle">Corona Engineering Ltd.</Subtitle>
               <p>
                 Developing a WebRTC based one click digital video classroom solution, firstime in Bangladesh.
               </p>
@@ -59,8 +59,8 @@ const Timeline = () => (
               position="right"
             >
               <CustomTimelineTag bgColor="rgb(33, 150, 243)">JOB</CustomTimelineTag>
-              <h3 className="vertical-timeline-element-title">Junior Web Developer</h3>
-              <h4 className="vertical-timeline-element-subtitle">Gain Solutions</h4>
+              <Title className="vertical-timeline-element-title">Junior Web Developer</Title>
+              <Subtitle className="vertical-timeline-element-subtitle">Gain Solutions</Subtitle>
               <p>
                 Developed a Customer Relationship Management system using React-Redux-NodeJS.
               </p>
@@ -81,8 +81,8 @@ const Timeline = () => (
               icon={<FontAwesomeIcon icon={faUniversity} />}
             >
               <CustomTimelineTag bgColor="rgb(1, 143, 105)">EDUCATION</CustomTimelineTag>
-              <h3 className="vertical-timeline-element-title">B.sc in CSE, 3.57/4.00</h3>
-              <h4 className="vertical-timeline-element-subtitle">Daffodil International University</h4>
+              <Title className="vertical-timeline-element-title">B.sc in CSE, 3.57/4.00</Title>
+              <Subtitle className="vertical-timeline-element-subtitle">Daffodil International University</Subtitle>
               <p>
                 I completed my B.Sc from Daffodil International University under Computer Science And
                 Engineering department. I completed 60 courses including Lab with total credit 148.
@@ -146,8 +146,8 @@ const Timeline = () => (
               position="right"
             >
               <CustomTimelineTag bgColor="rgb(1, 143, 105)">EDUCATION</CustomTimelineTag>
-              <h3 className="vertical-timeline-element-title">H.S.C in Science, 5.00/5.00</h3>
-              <h4 className="vertical-timeline-element-subtitle">Ispahani Public School &amp; College, Cumilla</h4>
+              <Title className="vertical-timeline-element-title">H.S.C in Science, 5.00/5.00</Title>
+              <Subtitle className="vertical-timeline-element-subtitle">Ispahani Public School &amp; College, Cumilla</Subtitle>
               <p>
                 I passed Higher Secondary School Certificate Examination from Ispahani Public School &amp; College under Science group in 2012.
               </p>
@@ -168,8 +168,8 @@ const Timeline = () => (
               icon={<FontAwesomeIcon icon={faUniversity} />}
             >
               <CustomTimelineTag bgColor="rgb(1, 143, 105)">EDUCATION</CustomTimelineTag>
-              <h3 className="vertical-timeline-element-title">S.S.C in Science, 5.00/5.00</h3>
-              <h4 className="vertical-timeline-element-subtitle">Ispahani Public School &amp; College, Cumilla</h4>
+              <Title className="vertical-timeline-element-title">S.S.C in Science, 5.00/5.00</Title>
+              <Subtitle className="vertical-timeline-element-subtitle">Ispahani Public School &amp; College, Cumilla</Subtitle>
               <p>
                 I passed Secondary School Certificate Examination from Ispahani Public School &amp; College under Science group in 2010.
               </p>
@@ -185,6 +185,14 @@ const Timeline = () => (
     </BaseLayout>
   </>
 )
+
+const Title = styled.h3`
+  font-size: 24px;
+`
+
+const Subtitle = styled.h4`
+  font-size: 20px;
+`
 
 const TimelineContainer = styled.div`
   width: 80%;

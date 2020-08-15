@@ -57,6 +57,10 @@ export default function Home() {
                   <img align="left" alt="Abdur Rahman Robin | Github" src="https://img.icons8.com/fluent/40/000000/github.png" />
                 </ContactItem>
 
+                <ContactItem target="_blank" href="https://stackoverflow.com/users/7387089/robin?tab=profile">
+                  <img align="left" alt="Abdur Rahman Robin | Stackoverflow" src="https://img.icons8.com/color/40/000000/stackoverflow.png" />
+                </ContactItem>
+
                 <ContactItem target="_blank" href="https://www.linkedin.com/in/robin4java/">
                   <img align="left" alt="Abdur Rahman Robin | Linkedin" src="https://img.icons8.com/color/40/000000/linkedin.png" />
                 </ContactItem>
@@ -116,7 +120,9 @@ const Avatar = styled.img`
   height: 280px;
 `
 
-const Name = styled.h1``
+const Name = styled.h1`
+  font-size: 36px;
+`
 
 const Designation = styled.h2`
   font-size: 1.37em;

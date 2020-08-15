@@ -35,4 +35,7 @@ export const NavItem = styled.a`
   &:visited, &:focus {
     color: #1078EE;
   }
+  &:hover {
+    text-decoration: none;
+  }
 `
