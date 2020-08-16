@@ -6,6 +6,7 @@ import { Form, FormGroup, FormLabel, FormControl, Button } from 'react-bootstrap
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
 import Link from 'next/link'
+import { mediaQueries } from '../shared/styles/mediaQueries'
 
 const Contact = () => (
   <>
@@ -62,6 +63,9 @@ const Contact = () => (
 const ContactContainer = styled.div`
   width: 80%;
   margin: 105px auto 0;
+  ${mediaQueries('phone-lg')`
+    width: 90%;
+  `}
 `
 
 const ContactBody = styled.div`
@@ -78,6 +82,9 @@ const ContactFormContainer = styled.div`
   width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
+  ${mediaQueries('phone-lg')`
+    flex-direction: column;
+  `}
 `
 
 const FormContainerLeft = styled.div`
@@ -93,6 +100,12 @@ const FormContainerLeft = styled.div`
   justify-content: center;
   color: white;
   padding: 15px 10px;
+  ${mediaQueries('phone-lg')`
+    width: 70%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 5px;
+  `}
 `
 
 const FormContainerRight = styled.div`
@@ -101,6 +114,9 @@ const FormContainerRight = styled.div`
   box-shadow: 0 0 5px rgba(0,0,0,.3);
   border-radius: 5px;
   padding: 25px 15px;
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+  `}
 `
 
 export default Contact
