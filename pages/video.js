@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Head from 'next/head'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
+import { mediaQueries } from '../shared/styles/mediaQueries'
 
 const Video = () => (
   <>
@@ -16,7 +17,7 @@ const Video = () => (
         <VideoBody>
           <h3 style={{ fontSize: '22px', marginTop: '50px', marginBottom: '20px' }}>LATEST VIDEOS I UPLOADED ON YOUTUBE</h3>
           <LatestVideoContainer>
-            <iframe width="32%" frameBorder="0" src="https://www.youtube.com/embed/83g6rPtJtno"></iframe>
+            <iframe width="32%" height="300" frameBorder="0" src="https://www.youtube.com/embed/83g6rPtJtno"></iframe>
             <iframe width="32%" height="300" frameBorder="0" src="https://www.youtube.com/embed/uRYpG2cGvy0"></iframe>
             <iframe width="32%" height="300" frameBorder="0" src="https://www.youtube.com/embed/jmrd0Drz31A"></iframe>
           </LatestVideoContainer>
@@ -37,6 +38,17 @@ const Video = () => (
 const VideoContainer = styled.div`
   width: 80%;
   margin: 105px auto 0;
+  ${mediaQueries('phone-lg')`
+    width: 90%;
+  `}
+  iframe {
+    ${mediaQueries('phone-lg')`
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    `}
+  }
 `
 
 const VideoBody = styled.div`
@@ -49,6 +61,9 @@ const LatestVideoContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  ${mediaQueries('phone-lg')`
+    flex-direction: column;
+  `}
 `
 
 const SizedBox = styled.div`
