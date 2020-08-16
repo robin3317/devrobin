@@ -3,9 +3,9 @@ import { BaseLayoutContainer, TemporaryInfo } from './BaseLayout.styles'
 
 const BaseLayout = props => (
   <>
-    <TemporaryInfo>
+    {/* <TemporaryInfo>
       <p>📢 I'm currently working on this project. Some features may not work as you expect! Sorry 🙏</p>
-    </TemporaryInfo>
+    </TemporaryInfo> */}
     <Header />
     <BaseLayoutContainer>
       {props.children}
