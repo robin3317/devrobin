@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { HeaderContainer, HeaderMain, HeaderLeft, HeaderRight, NavItem } from './Header.styles'
+import { HeaderContainer, HeaderMain, HeaderLeft, HeaderRight, CustomNavItem } from './Header.styles'
+import { Navbar, Nav, NavbarBrand } from 'react-bootstrap'
 
 const Logo = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 60 50">
@@ -8,22 +9,29 @@ const Logo = () => (
 )
 
 const Header = () => (
-  <HeaderContainer>
-    <HeaderMain>
-      <HeaderLeft>
-        <Link href="/" passHref><NavItem>{<Logo />}</NavItem></Link>
-      </HeaderLeft>
 
-      <HeaderRight>
-        <Link href="/" passHref><NavItem>Home</NavItem></Link>
-        <Link href="/about" passHref><NavItem>About Me</NavItem></Link>
-        <Link href="/portfolio" passHref><NavItem>Portfolio</NavItem></Link>
-        <Link href="/timeline" passHref><NavItem>Timeline</NavItem></Link>
-        <Link href="/blog" passHref><NavItem>Blog</NavItem></Link>
-        <Link href="/video" passHref><NavItem>Video</NavItem></Link>
-        <Link href="/contact" passHref><NavItem>Contact</NavItem></Link>
-      </HeaderRight>
-    </HeaderMain>
+  <HeaderContainer expand="md">
+    <NavbarBrand>
+      <Link href="/" passHref>
+        <CustomNavItem><Logo /></CustomNavItem>
+      </Link>
+    </NavbarBrand>
+
+
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="ml-auto">
+        <Nav.Item className="mr-4"><Link href="/" passHref><CustomNavItem>Home</CustomNavItem></Link></Nav.Item>
+        <Nav.Item className="mr-4"><Link href="/about" passHref><CustomNavItem>About Me</CustomNavItem></Link></Nav.Item>
+        <Nav.Item className="mr-4"><Link href="/portfolio" passHref><CustomNavItem>Portfolio</CustomNavItem></Link></Nav.Item>
+        <Nav.Item className="mr-4"><Link href="/timeline" passHref><CustomNavItem>Timeline</CustomNavItem></Link></Nav.Item>
+        <Nav.Item className="mr-4"><Link href="/blog" passHref><CustomNavItem>Blog</CustomNavItem></Link></Nav.Item>
+        <Nav.Item className="mr-4"><Link href="/video" passHref><CustomNavItem>Video</CustomNavItem></Link></Nav.Item>
+        <Nav.Item className="mr-4"><Link href="/contact" passHref><CustomNavItem>Contact</CustomNavItem></Link></Nav.Item>
+      </Nav>
+    </Navbar.Collapse>
+
   </HeaderContainer>
 )
 

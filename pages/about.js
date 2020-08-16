@@ -82,24 +82,24 @@ const About = () => (
 
             <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
               <ServiceOfferCardContainer>
-                <CardIcon src="./images/s2.png" alt="web development" />
-                <CardTitle>WEB DEVELOPMENT</CardTitle>
-                <CardDescription>Any kind of web application you want to build.</CardDescription>
+                <CardIcon src="./images/s2.png" alt="ui/ux design" />
+                <CardTitle>UI/UX DESIGN</CardTitle>
+                <CardDescription>Any kind of ui/ux design you want to build.</CardDescription>
               </ServiceOfferCardContainer>
             </Card>
 
             <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
               <ServiceOfferCardContainer>
-                <CardIcon src="./images/s3.png" alt="web development" />
-                <CardTitle>WEB DEVELOPMENT</CardTitle>
-                <CardDescription>Any kind of web application you want to build.</CardDescription>
+                <CardIcon src="./images/s3.png" alt="app design" />
+                <CardTitle>APP DESIGN</CardTitle>
+                <CardDescription>Any kind of app design you want to build.</CardDescription>
               </ServiceOfferCardContainer>
             </Card>
 
             <Card width="23.50%" maxWidth="300px">
               <ServiceOfferCardContainer>
-                <CardIcon src="./images/s4.png" alt="web development" />
-                <CardTitle>WEB DEVELOPMENT</CardTitle>
+                <CardIcon src="./images/s4.png" alt="mobile app development" />
+                <CardTitle>MOBILE APP DEVELOPMENT</CardTitle>
                 <CardDescription>Any kind of web application you want to build.</CardDescription>
               </ServiceOfferCardContainer>
             </Card>
@@ -325,7 +325,9 @@ const ServiceOfferCardContainer = styled.div`
 
 const CardIcon = styled.img``
 
-const CardTitle = styled.p``
+const CardTitle = styled.p`
+  margin-top: 10px;
+`
 
 const CardDescription = styled.p``
 

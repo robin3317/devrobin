@@ -29,6 +29,14 @@ const BaseLayout = props => (
           box-sizing: border-box;
         }
 
+        a {
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
         /* CUSTOM LINE COLOR */
         .vertical-timeline::before {
           background: #ccc;

@@ -1,17 +1,13 @@
 import styled from 'styled-components'
+import { Navbar } from 'react-bootstrap'
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled(Navbar)`
   position: fixed;
   top: 25px;
-  display: flex;
-  -webkit-box-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 100vw;
-  background-color: rgb(248, 248, 248);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
   z-index: 1000;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  background-color: rgb(248, 248, 248);
 `
 
 export const HeaderMain = styled.div`
@@ -25,17 +21,5 @@ export const HeaderLeft = styled.div``
 
 export const HeaderRight = styled.div``
 
-export const NavItem = styled.a`
-  &:not(:first-child) {
-    margin-left: 40px;
-  }
-  text-decoration: none;
-  color: #1078EE;
-  font-weight: 500;
-  &:visited, &:focus {
-    color: #1078EE;
-  }
-  &:hover {
-    text-decoration: none;
-  }
+export const CustomNavItem = styled.a`
 `
