@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap'
 
 export const HeaderContainer = styled(Navbar)`
   position: fixed;
-  top: 25px;
+  top: 0px;
   z-index: 1000;
   width: 100vw;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
