@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faArrowRight, faUniversity, faVideo, faBlog } from '@fortawesome/free-solid-svg-icons'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
+import { mediaQueries } from '../shared/styles/mediaQueries'
 
 const Timeline = () => (
   <>
@@ -18,7 +19,7 @@ const Timeline = () => (
         <SectionTitle title="Timeline" />
 
         <TimelineBody>
-          <h3 style={{ fontSize: '22px' }}>MY ROAD TO GLORY!</h3>
+          <h3 style={{ fontSize: '22px', marginTop: '10px' }}>MY ROAD TO GLORY!</h3>
           <p style={{textAlign: 'center'}}>
             Below you can see a timeline of my professional accomplishments along with some educational accomplishments.
             I hope that will motivate you to follow your dreams and to write down your own accomplishments
@@ -197,6 +198,9 @@ const Subtitle = styled.h4`
 const TimelineContainer = styled.div`
   width: 80%;
   margin: 105px auto 0;
+  ${mediaQueries('phone-lg')`
+    width: 90%;
+  `}
 `
 
 const TimelineBody = styled.div`
