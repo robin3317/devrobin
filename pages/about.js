@@ -224,7 +224,7 @@ const Introduction = styled.div`
   display: flex;
   justify-content: space-between;
   ${mediaQueries('phone-lg')`
-    flex-flow: column-reverse;
+    flex-direction: column-reverse;
     align-items: center;
   `}
 `

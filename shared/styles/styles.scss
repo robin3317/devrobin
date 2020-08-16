@@ -60,3 +60,7 @@ h2 {
   @include respond(phone-lg) { font-size: 16px; }
   @include respond(phone-md) { font-size: 12px; }
 }
+
+h3 {
+  font-size: 20px;
+}

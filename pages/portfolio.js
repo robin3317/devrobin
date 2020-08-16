@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Button } from 'react-bootstrap'
 import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
+import { mediaQueries } from '../shared/styles/mediaQueries'
 
 const Portfolio = () => (
   <>
@@ -55,7 +56,7 @@ const Portfolio = () => (
             </CardLeft>
 
             <CardRight width="50%">
-              <ProjectImg src="/images/ecommerz.png" />
+              <ProjectImg src="/images/ecommerz.png" marginTop />
               <p style={{ textAlign: 'center' }}>
                 ReactJS | Redux | Firebase | GraphQL + Apollo
               </p>
@@ -71,6 +72,9 @@ const Portfolio = () => (
 const PortfolioContainer = styled.div`
   width: 80%;
   margin: 105px auto 0;
+  ${mediaQueries('phone-lg')`
+    width: 90%;
+  `}
 `
 
 const EmptyContainer = styled.div`
@@ -85,6 +89,10 @@ const PortfolioCard = styled.div`
   padding: 20px 15px;
   display: flex;
   justify-content: space-between;
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+    flex-direction: column;
+  `}
 `
 
 const PortfolioItemContainer = styled.div`
@@ -97,26 +105,30 @@ const PortfolioItemContainer = styled.div`
 
 const CardLeft = styled.div`
   width: ${props => props.width || '49%'};
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+  `}
 `
 
 const CardRight = styled.div`
   width: ${props => props.width || '49%'};
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+  `}
 `
 
 const ProjectImg = styled.img`
   width: 100%;
   height: 80%;
   max-height: 250px;
+  margin-top: ${props => props.marginTop ? '20px' : '0'}
 `
 
 const Title = styled.h1`
-  font-size: 36px;
   color: #ffa10a;
 `
 
-const Subtitle = styled.h3`
-  font-size: 24px;
-`
+const Subtitle = styled.h2``
 
 const Description = styled.p`
   margin-top: 20px;
