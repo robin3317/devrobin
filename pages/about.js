@@ -252,12 +252,9 @@ const Avatar = styled.img`
   height: 330px;
 `
 
-const Name = styled.h1`
-  font-size: 36px;
-`
+const Name = styled.h1``
 
 const Designation = styled.h2`
-  font-size: 1.37em;
   margin-top: 0;
 `
 

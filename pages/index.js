@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Head from 'next/head'
 import BaseLayout from '../components/BaseLayout'
+import { mediaQueries } from '../shared/styles/mediaQueries'
 
 export default function Home() {
   return (
@@ -87,12 +88,33 @@ const HomeContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 95%;
+
+  ${mediaQueries('phone-lg')`
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  `}
 `
 
 const HomeLeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 45%;
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+  `}
+`
+const HomeRightContainer = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+    align-items: center;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  `}
 `
 
 const InfoContainer = styled.div`
@@ -120,13 +142,9 @@ const Avatar = styled.img`
   height: 280px;
 `
 
-const Name = styled.h1`
-  font-size: 36px;
-`
+const Name = styled.h1``
 
-const Designation = styled.h2`
-  font-size: 1.37em;
-`
+const Designation = styled.h2``
 
 const Resume = styled.button`
   border: none;
@@ -138,9 +156,6 @@ const Resume = styled.button`
   cursor: pointer;
 `
 
-const HomeRightContainer = styled.div`
-  width: 50%;
-`
 
 const Intro = styled.div`
   display: flex;
