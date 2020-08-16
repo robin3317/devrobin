@@ -4,6 +4,7 @@ import BaseLayout from '../components/BaseLayout'
 import SectionTitle from '../components/SectionTitle'
 import Skillset from '../components/Skillset'
 import Card from '../components/Card'
+import { mediaQueries } from '../shared/styles/mediaQueries'
 
 const About = () => (
   <>
@@ -214,16 +215,26 @@ const FeedbackDescription = styled.p``
 const AboutContainer = styled.div`
   width: 80%;
   margin: 105px auto 0;
+  ${mediaQueries('phone-lg')`
+    width: 90%
+  `}
 `
 
 const Introduction = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mediaQueries('phone-lg')`
+    flex-flow: column-reverse;
+    align-items: center;
+  `}
 `
 
 const LeftIntro = styled.div`
   width: 52%;
   line-height: 1.8;
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+  `}
 `
 
 const RightIntro = styled.div`
@@ -231,6 +242,11 @@ const RightIntro = styled.div`
   flex-direction: column;
   align-items: center;
   width: 40%;
+  ${mediaQueries('phone-lg')`
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  `}
 `
 
 const AvatarContainer = styled.div`
@@ -311,6 +327,10 @@ const ServiceCardContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  ${mediaQueries('phone-lg')`
+    flex-direction: column;
+    align-items: center;
+  `}
 `
 
 const ServiceOfferCardContainer = styled.div`
