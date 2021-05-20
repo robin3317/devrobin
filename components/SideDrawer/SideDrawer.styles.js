@@ -8,7 +8,7 @@ export const NavContainer = styled.nav`
   height: 100vh;
   box-shadow: 1px 0 7px rgba(#000, 0.3);
   width: 65%;
-  max-width: 35rem;
+  max-width: 315px;
   z-index: 999;
   padding: 1.5rem 1rem;
   transform: ${(props) =>

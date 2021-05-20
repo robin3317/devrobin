@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Navbar } from "react-bootstrap";
-import { mediaQueries } from "../../shared/styles/mediaQueries";
+import styled from 'styled-components';
+import { Navbar } from 'react-bootstrap';
+import { mediaQueries } from '../../shared/styles/mediaQueries';
 
 export const HeaderContainer = styled(Navbar)`
   position: fixed;
@@ -13,10 +13,14 @@ export const HeaderContainer = styled(Navbar)`
 `;
 
 export const HeaderWrapper = styled.div`
-  ${mediaQueries("phone-md-lg")`
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+
+  ${mediaQueries('phone-md-lg')`
     display: none;
   `}
-  ${mediaQueries("tab-port")`
+  ${mediaQueries('tab-port')`
     display: none;
   `}
 `;
