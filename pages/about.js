@@ -1,10 +1,10 @@
-import styled, { css } from 'styled-components'
-import Head from 'next/head'
-import BaseLayout from '../components/BaseLayout'
-import SectionTitle from '../components/SectionTitle'
-import Skillset from '../components/Skillset'
-import Card from '../components/Card'
-import { mediaQueries } from '../shared/styles/mediaQueries'
+import styled, { css } from 'styled-components';
+import Head from 'next/head';
+import BaseLayout from '../components/BaseLayout';
+import SectionTitle from '../components/SectionTitle';
+import Skillset from '../components/Skillset';
+import Card from '../components/Card';
+import { mediaQueries } from '../shared/styles/mediaQueries';
 
 const About = () => (
   <>
@@ -18,30 +18,33 @@ const About = () => (
         <Introduction>
           <LeftIntro>
             <p>
-              A motivated, passionate and experienced Full Stack Developer from Bangladesh,
-              currently staying in Dhaka. I'm working with JavaScript, Flutter and Web Technology.
-              I love to work with challenge, passion and new technology.
+              A motivated, passionate and experienced Full Stack Developer from
+              Bangladesh, currently staying in Dhaka. I'm working with
+              JavaScript, Flutter and Web Technology. I love to work with
+              challenge, passion and new technology.
             </p>
             <HighlightedContainer>
               <VerticalHr />
               <p>Love to convert thoughts into CODE.</p>
             </HighlightedContainer>
             <p>
-              I love to learn new technology and share my knowledge with others. In a nutshell,
-              I am nothing but a learner. And I don't want to be perfect,
-              I want to be honest about myself.
+              I love to learn new technology and share my knowledge with others.
+              In a nutshell, I am nothing but a learner. And I don't want to be
+              perfect, I want to be honest about myself.
             </p>
           </LeftIntro>
 
           <RightIntro>
             <AvatarContainer>
-              <Avatar src="/images/avatar.png" alt="Abdur Rahman Robin | Codeonces" />
+              <Avatar
+                src="/images/avatar.png"
+                alt="Abdur Rahman Robin | Codeonces"
+              />
               <Outline />
             </AvatarContainer>
             <Name>ABDUR RAHMAN ROBIN</Name>
             <Designation>FULL STACK SOFTWARE DEVELOPER</Designation>
           </RightIntro>
-
         </Introduction>
 
         <SkillsetsContainer>
@@ -49,22 +52,58 @@ const About = () => (
 
           <Skillsets>
             <Development>
-              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" title="Javascript" />
-              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" title="Typescript" />
-              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" title="ReactJS" />
-              <Skillset imgSrc="https://redux.js.org/img/redux.svg" title="Redux" />
-              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png" title="GraphQL" />
-              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" title="Node" />
+              <Skillset
+                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                title="Javascript"
+              />
+              <Skillset
+                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+                title="Typescript"
+              />
+              <Skillset
+                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                title="ReactJS"
+              />
+              <Skillset
+                imgSrc="https://redux.js.org/img/redux.svg"
+                title="Redux"
+              />
+              <Skillset
+                imgSrc="https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png"
+                title="GraphQL"
+              />
+              <Skillset
+                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
+                title="Node"
+              />
               <Skillset imgSrc="https://deno.land/logo.svg" title="Deno" />
-              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png" title="Flutter" />
-              <Skillset imgSrc="https://reactnative.dev/img/header_logo.svg" title="React Native" />
-              <Skillset imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" title="Firebase" />
+              <Skillset
+                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png"
+                title="Flutter"
+              />
+              <Skillset
+                imgSrc="https://reactnative.dev/img/header_logo.svg"
+                title="React Native"
+              />
+              <Skillset
+                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
+                title="Firebase"
+              />
             </Development>
 
             <Design>
-              <Skillset imgSrc="https://www.adobe.com/content/dam/cc/icons/xd.svg" title="Adobe XD" />
-              <Skillset imgSrc="https://www.adobe.com/content/dam/cc/icons/photoshop-mobile.svg" title="Photoshop" />
-              <Skillset imgSrc="https://www.adobe.com/content/dam/cc/icons/pr_cc_app_RGB.svg" title="Premier Pro" />
+              <Skillset
+                imgSrc="https://www.adobe.com/content/dam/cc/icons/xd.svg"
+                title="Adobe XD"
+              />
+              <Skillset
+                imgSrc="https://www.adobe.com/content/dam/cc/icons/photoshop-mobile.svg"
+                title="Photoshop"
+              />
+              <Skillset
+                imgSrc="https://www.adobe.com/content/dam/cc/icons/pr_cc_app_RGB.svg"
+                title="Premier Pro"
+              />
             </Design>
           </Skillsets>
         </SkillsetsContainer>
@@ -73,27 +112,33 @@ const About = () => (
           <SectionHeader>Service Offers</SectionHeader>
 
           <ServiceCardContainer>
-            <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
+            <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s1.png" alt="web development" />
                 <CardTitle>WEB DEVELOPMENT</CardTitle>
-                <CardDescription>Any kind of web application you want to build.</CardDescription>
+                <CardDescription>
+                  Any kind of web application you want to build.
+                </CardDescription>
               </ServiceOfferCardContainer>
             </Card>
 
-            <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
+            <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s2.png" alt="ui/ux design" />
                 <CardTitle>UI/UX DESIGN</CardTitle>
-                <CardDescription>Any kind of ui/ux design you want to build.</CardDescription>
+                <CardDescription>
+                  Any kind of ui/ux design you want to build.
+                </CardDescription>
               </ServiceOfferCardContainer>
             </Card>
 
-            <Card width="23.50%" maxWidth="300px" style={{marginRight: "2%"}}>
+            <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s3.png" alt="app design" />
                 <CardTitle>APP DESIGN</CardTitle>
-                <CardDescription>Any kind of app design you want to build.</CardDescription>
+                <CardDescription>
+                  Any kind of app design you want to build.
+                </CardDescription>
               </ServiceOfferCardContainer>
             </Card>
 
@@ -101,7 +146,9 @@ const About = () => (
               <ServiceOfferCardContainer>
                 <CardIcon src="./images/s4.png" alt="mobile app development" />
                 <CardTitle>MOBILE APP DEVELOPMENT</CardTitle>
-                <CardDescription>Any kind of web application you want to build.</CardDescription>
+                <CardDescription>
+                  Any kind of web application you want to build.
+                </CardDescription>
               </ServiceOfferCardContainer>
             </Card>
           </ServiceCardContainer>
@@ -163,7 +210,7 @@ const About = () => (
       </AboutContainer>
     </BaseLayout>
   </>
-)
+);
 
 const FeedbackContainer = styled.div`
   margin-top: 50px;
@@ -171,7 +218,7 @@ const FeedbackContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const FeedbackCardContainer = styled.div`
   display: flex;
@@ -179,46 +226,53 @@ const FeedbackCardContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
-`
+`;
 
 const FeedbackHeader = styled.div`
   display: flex;
   align-items: center;
-`
+`;
 
 const FeedbackAvatar = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin-right: 20px;
-`
+`;
 
 const FeedbackIntro = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 
 const FeedbackName = styled.h4`
   margin: 0;
-`
+`;
 
 const FeedbackDesignation = styled.p`
   margin: 0;
-`
+`;
 
 const FeedbackCompany = styled.p`
   margin: 0;
-`
+`;
 
-const FeedbackDescription = styled.p``
+const FeedbackDescription = styled.p``;
 
 const AboutContainer = styled.div`
-  width: 80%;
-  margin: 105px auto 0;
-  ${mediaQueries('phone-lg')`
-    width: 90%
+  width: 100%;
+  max-width: 1400px;
+  margin: 70px auto 0;
+  ${mediaQueries('phone-md-lg')`
+    width: 90%;
   `}
-`
+  ${mediaQueries('tab-port')`
+    width: 90%;
+  `}
+  ${mediaQueries('tab-901-to-1420')`
+    width: 90%;
+  `}
+`;
 
 const Introduction = styled.div`
   display: flex;
@@ -227,7 +281,7 @@ const Introduction = styled.div`
     flex-direction: column-reverse;
     align-items: center;
   `}
-`
+`;
 
 const LeftIntro = styled.div`
   width: 52%;
@@ -235,7 +289,7 @@ const LeftIntro = styled.div`
   ${mediaQueries('phone-lg')`
     width: 100%;
   `}
-`
+`;
 
 const RightIntro = styled.div`
   display: flex;
@@ -247,71 +301,75 @@ const RightIntro = styled.div`
     margin-top: 15px;
     margin-bottom: 15px;
   `}
-`
+`;
 
 const AvatarContainer = styled.div`
   position: relative;
-`
+`;
 
 const Outline = styled.div`
   width: 160px;
   height: 290px;
-  background-color: #5295E1;
+  background-color: #5295e1;
   position: absolute;
   bottom: 0;
   right: -15px;
   z-index: -1;
-`
+`;
 
 const Avatar = styled.img`
   width: 320px;
   height: 330px;
-`
+`;
 
-const Name = styled.h1``
+const Name = styled.h1``;
 
 const Designation = styled.h2`
   margin-top: 0;
-`
+`;
 
 const HighlightedContainer = styled.div`
   display: flex;
   align-items: center;
-`
+`;
 
 const VerticalHr = styled.div`
-  background-color: #D89024;
+  background-color: #d89024;
   width: 5px;
   height: 30px;
   margin-right: 20px;
-`
+`;
 
 const SkillsetsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-`
+`;
 
 const Skillsets = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 
 const sectionStyles = css`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-`
+`;
 
-const Development = styled.div`${sectionStyles}`
+const Development = styled.div`
+  ${sectionStyles}
+`;
 
-const Design = styled.div`${sectionStyles}`
+const Design = styled.div`
+  ${sectionStyles}
+`;
 
 const SectionHeader = styled.h3`
   font-size: 32px;
   font-weight: 500;
-`
+`;
 
 const ServiceContainer = styled.div`
   margin-top: 30px;
@@ -319,7 +377,7 @@ const ServiceContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const ServiceCardContainer = styled.div`
   display: flex;
@@ -331,21 +389,21 @@ const ServiceCardContainer = styled.div`
     flex-direction: column;
     align-items: center;
   `}
-`
+`;
 
 const ServiceOfferCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
 
-const CardIcon = styled.img``
+const CardIcon = styled.img``;
 
 const CardTitle = styled.p`
   margin-top: 10px;
-`
+`;
 
-const CardDescription = styled.p``
+const CardDescription = styled.p``;
 
-export default About
+export default About;

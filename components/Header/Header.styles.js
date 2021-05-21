@@ -10,13 +10,18 @@ export const HeaderContainer = styled(Navbar)`
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
   background-color: rgb(248, 248, 248);
   padding: 0;
+  display: flex;
+  justify-content: center;
 `;
 
 export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100vw;
-
+  max-width: 1400px;
+  ${mediaQueries('tab-901-to-1420')`
+    width: 90%;
+  `}
   ${mediaQueries('phone-md-lg')`
     display: none;
   `}

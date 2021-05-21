@@ -20,7 +20,7 @@ const SideDrawer = ({ isOpen, toggleSideDrawerHandler }) => {
         {RouteData.map((item, index) => (
           <RouteList key={index}>
             <Link href={item.path} passHref>
-              {item.route}
+              <a>{item.route}</a>
             </Link>
           </RouteList>
         ))}

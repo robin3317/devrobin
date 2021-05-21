@@ -1,8 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const BaseLayoutContainer = styled.div`
   margin-top: 60px;
-`
+  display: flex;
+  justify-content: center;
+`;
 
 export const TemporaryInfo = styled.div`
   position: fixed;
@@ -15,4 +17,4 @@ export const TemporaryInfo = styled.div`
   font-size: 14px;
   display: flex;
   justify-content: center;
-`
+`;
