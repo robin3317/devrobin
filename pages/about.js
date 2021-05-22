@@ -56,10 +56,10 @@ const About = () => (
                 imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 title="Javascript"
               />
-              <Skillset
+              {/* <Skillset
                 imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
                 title="Typescript"
-              />
+              /> */}
               <Skillset
                 imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 title="ReactJS"
@@ -68,10 +68,10 @@ const About = () => (
                 imgSrc="https://redux.js.org/img/redux.svg"
                 title="Redux"
               />
-              <Skillset
+              {/* <Skillset
                 imgSrc="https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png"
                 title="GraphQL"
-              />
+              /> */}
               <Skillset
                 imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
                 title="Node"
@@ -92,6 +92,7 @@ const About = () => (
             </Development>
 
             <Design>
+              <Skillset imgSrc="./images/figma.svg" title="Figma" />
               <Skillset
                 imgSrc="https://www.adobe.com/content/dam/cc/icons/xd.svg"
                 title="Adobe XD"
