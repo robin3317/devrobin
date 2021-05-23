@@ -27,7 +27,15 @@ export default function Home() {
               <div className="info">
                 <h1 className="mt-10">ABDUR RAHMAN ROBIN</h1>
                 <h2>FULL STACK SOFTWARE DEVELOPER</h2>
-                <a className="resume-btn" href="./cv/cv.txt" download>
+                <a
+                  className="resume-btn"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Recommand to open resume in browser after downloading!"
+                  href="./cv/Abdur_Rahman_Robin_CV.pdf"
+                  target="_blank"
+                  download
+                >
                   Download Resume
                 </a>
               </div>

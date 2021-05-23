@@ -71,7 +71,7 @@ const Timeline = () => (
                 href="http://daffodilvarsity.edu.bd/"
                 target="_blank"
               >
-                Company website <FontAwesomeIcon icon={faArrowRight} />
+                Company website &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -110,7 +110,7 @@ const Timeline = () => (
                 href="https://edutechs.org/"
                 target="_blank"
               >
-                Check it out here <FontAwesomeIcon icon={faArrowRight} />
+                Check it out here &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -150,7 +150,7 @@ const Timeline = () => (
                 href="https://gain.solutions/"
                 target="_blank"
               >
-                Company website <FontAwesomeIcon icon={faArrowRight} />
+                Company website &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -190,7 +190,7 @@ const Timeline = () => (
                 href="http://daffodilvarsity.edu.bd/"
                 target="_blank"
               >
-                University website <FontAwesomeIcon icon={faArrowRight} />
+                University website &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -221,7 +221,7 @@ const Timeline = () => (
                 href="https://medium.com/@robin4java/my-journey-and-one-common-mistake-we-are-doing-when-learning-programming-a04175c75f64"
                 target="_blank"
               >
-                Check it out here <FontAwesomeIcon icon={faArrowRight} />
+                Check it out here &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -248,7 +248,7 @@ const Timeline = () => (
                 href="https://www.youtube.com/c/codeonces"
                 target="_blank"
               >
-                Channel link <FontAwesomeIcon icon={faArrowRight} />
+                Channel link &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -289,7 +289,7 @@ const Timeline = () => (
                 href="http://www.ipsc.edu.bd/"
                 target="_blank"
               >
-                College website <FontAwesomeIcon icon={faArrowRight} />
+                College website &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -328,7 +328,7 @@ const Timeline = () => (
                 href="http://www.ipsc.edu.bd/"
                 target="_blank"
               >
-                School website <FontAwesomeIcon icon={faArrowRight} />
+                School website &#187;
               </a>
             </VerticalTimelineElement>
           </VerticalTimeline>

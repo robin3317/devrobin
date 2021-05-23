@@ -3,10 +3,7 @@ import RouteData from '../../shared/routeData';
 
 const SideDrawer = ({ isOpen, toggleSideDrawerHandler }) => {
   return (
-    <nav
-      className={`sidedrawer-container ${isOpen ? 'tl-x0' : 'tl-x105'}`}
-      isOpen={isOpen}
-    >
+    <nav className={`sidedrawer-container ${isOpen ? 'tl-x0' : 'tl-x105'}`}>
       <span className="close" onClick={toggleSideDrawerHandler}>
         &#x274C;
       </span>
