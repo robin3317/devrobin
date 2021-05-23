@@ -26,7 +26,9 @@ export default function Home() {
               <InfoContainer>
                 <Name>ABDUR RAHMAN ROBIN</Name>
                 <Designation>FULL STACK SOFTWARE DEVELOPER</Designation>
-                <Resume>Download Resume</Resume>
+                <Resume href="./cv/cv.txt" download>
+                  Download Resume
+                </Resume>
               </InfoContainer>
             </HomeLeftContainer>
 
@@ -218,7 +220,7 @@ const Name = styled.h1`
 
 const Designation = styled.h2``;
 
-const Resume = styled.button`
+const Resume = styled.a`
   border: none;
   outline: none;
   color: #ffffff;
@@ -226,6 +228,9 @@ const Resume = styled.button`
   padding: 7px 10px;
   border-radius: 3px;
   cursor: pointer;
+  &:hover {
+    color: #ffffff;
+  }
 `;
 
 const Intro = styled.div`

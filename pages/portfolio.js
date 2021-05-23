@@ -1,8 +1,6 @@
-import styled from 'styled-components';
 import Head from 'next/head';
 import BaseLayout from '../components/BaseLayout';
 import SectionTitle from '../components/SectionTitle';
-import { mediaQueries } from '../shared/styles/mediaQueries';
 
 const Portfolio = () => (
   <>
@@ -14,21 +12,21 @@ const Portfolio = () => (
       <div className="portfolio-container">
         <SectionTitle title="Portfolio" />
 
-        <PortfolioItemContainer>
+        <div className="portfolio-item-container">
           {/* Edutechs */}
-          <PortfolioCard>
-            <CardLeft>
-              <ProjectImg src="/images/edutechs.png" />
+          <div className="portfolio-card">
+            <div className="card-left">
+              <img className="project-img" src="/images/edutechs.png" />
               <p style={{ textAlign: 'center' }}>
                 Javascript | JQuery | Firebase | WebRTC | NodeJS | Sass | Custom
                 Redux Like Store Implementation | Responsive Design
               </p>
-            </CardLeft>
+            </div>
 
-            <CardRight>
-              <Title>Edutechs</Title>
-              <Subtitle>One click digital classroom solution</Subtitle>
-              <Description>
+            <div className="card-right">
+              <h1 className="title">Edutechs</h1>
+              <h2>One click digital classroom solution</h2>
+              <p className="mt-20">
                 Edutechs is a one click digital video classroom solution along
                 with all the features you need to be a successful teacher or to
                 run a educational institution, first time in Bangladesh.
@@ -36,31 +34,36 @@ const Portfolio = () => (
                 <br />I worked almost every part of this application, specially
                 in Live Streaming, Signup-Signin, Topic Discussion and Chatting
                 Section.
-              </Description>
+              </p>
 
-              <CustomLinkButton href="https://edutechs.org/" target="_blank">
+              <a
+                className="custom-btn"
+                href="https://edutechs.org/"
+                target="_blank"
+              >
                 LIVE
-              </CustomLinkButton>
-            </CardRight>
-          </PortfolioCard>
+              </a>
+            </div>
+          </div>
 
-          <EmptyContainer />
+          <div className="empty-container" />
 
           {/* Edutechs Mobile */}
-          <PortfolioCard>
-            <CardLeft>
-              <ProjectImg src="/images/edutech-mobile.png" marginTop />
-              <p style={{ textAlign: 'center', marginTop: '15px' }}>
-                ReactNative | NativeBase | Firebase
-              </p>
-            </CardLeft>
+          <div className="portfolio-card">
+            <div className="card-left">
+              <img
+                className="project-img mt-20"
+                src="/images/edutech-mobile.png"
+              />
+              <p className="tag">ReactNative | NativeBase | Firebase</p>
+            </div>
 
-            <CardRight>
-              <Title>Edutechs Mobile</Title>
-              <Subtitle>
+            <div className="card-right">
+              <h1 className="title">Edutechs Mobile</h1>
+              <h2>
                 One click Digital Classroom Streaming and Conferencing Solution
-              </Subtitle>
-              <Description>
+              </h2>
+              <p className="mt-20">
                 Edutech is Bangladesh's first advanced Integrated Education
                 Ecosystem. Introduce your students to a seamless classroom to
                 digital learning experience. Monitor their progress and extend
@@ -72,38 +75,40 @@ const Portfolio = () => (
                 application is developed by ReactNative and we use NativeBase as
                 ReactNative UI library. This was a challenging experience,
                 because some apis were different than web!
-              </Description>
+              </p>
 
-              <CustomLinkButton
+              <a
+                className="custom-btn"
                 href="https://play.google.com/store/apps/details?id=com.openvidu_react_native"
                 target="_blank"
               >
                 Google Play
-              </CustomLinkButton>
-              <CustomLinkButton
+              </a>
+              <a
+                className="custom-btn"
                 href="https://apps.apple.com/gb/app/edutech-bd/id1533784019"
                 target="_blank"
               >
                 App Store
-              </CustomLinkButton>
-            </CardRight>
-          </PortfolioCard>
+              </a>
+            </div>
+          </div>
 
-          <EmptyContainer />
+          <div className="empty-container" />
 
           {/* Ecommerz */}
-          <PortfolioCard>
-            <CardLeft>
-              <ProjectImg src="/images/ecommerz.png" />
+          <div className="portfolio-card">
+            <div className="card-left">
+              <img className="project-img" src="/images/ecommerz.png" />
               <p style={{ textAlign: 'center' }}>
                 ReactJS | Redux | Firebase | GraphQL + Apollo
               </p>
-            </CardLeft>
+            </div>
 
-            <CardRight>
-              <Title>Ecommerz BD</Title>
-              <Subtitle>An online shopping app</Subtitle>
-              <Description>
+            <div className="card-right">
+              <h1 className="title">Ecommerz BD</h1>
+              <h2>An online shopping app</h2>
+              <p className="mt-20">
                 An online shopping application where you can buy your products
                 and pay bills online.
                 <br />
@@ -111,76 +116,77 @@ const Portfolio = () => (
                 This is a practice project using ReactJS, React Hooks, React
                 Context API, Redux, Firebase, Stripe, Service Workers &amp; Web
                 Workers.
-              </Description>
+              </p>
 
-              <CustomLinkButton
+              <a
+                className="custom-btn"
                 href="http://ecommerz-bd.herokuapp.com/"
                 target="_blank"
               >
                 LIVE
-              </CustomLinkButton>
-              <CustomLinkButton
+              </a>
+              <a
+                className="custom-btn"
                 href="https://github.com/robin3317/ecommerce"
                 target="_blank"
               >
                 GITHUB
-              </CustomLinkButton>
-            </CardRight>
-          </PortfolioCard>
+              </a>
+            </div>
+          </div>
 
-          <EmptyContainer />
+          <div className="empty-container" />
 
           {/* DIU faculty site */}
-          <PortfolioCard>
-            <CardLeft>
-              <ProjectImg src="/images/diu_faculty_site.png" marginTop />
-              <p style={{ textAlign: 'center', marginTop: '15px' }}>
-                ReactJS | NextJS | SCSS | MySQL
-              </p>
-            </CardLeft>
+          <div className="portfolio-card">
+            <div className="card-left">
+              <img
+                className="project-img mt-20"
+                src="/images/diu_faculty_site.png"
+              />
+              <p className="tag">ReactJS | NextJS | SCSS | MySQL</p>
+            </div>
 
-            <CardRight>
-              <Title>DIU Faculty Site</Title>
-              <Subtitle>All the information about DIU faculties</Subtitle>
-              <Description>
+            <div className="card-right">
+              <h1 className="title">DIU Faculty Site</h1>
+              <h2>All the information about DIU faculties</h2>
+              <p className="mt-20">
                 From design to development, I do everything of this site.
                 Although actual DIU faculty site is not updated with this design
                 and code but you can see the live version of this project by
                 bellow following link, hopefully will live very soon.
-              </Description>
+              </p>
 
-              <CustomLinkButton
+              <a
+                className="custom-btn"
                 href="https://www.figma.com/proto/hrVzyQfzcZuFHuaKNLURQH/diu-faculty-page?node-id=239%3A1&scaling=min-zoom&hide-ui=1"
                 target="_blank"
               >
                 Design
-              </CustomLinkButton>
-              <CustomLinkButton
+              </a>
+              <a
+                className="custom-btn"
                 href="https://diu-faculty-site.vercel.app/"
                 target="_blank"
               >
                 Live
-              </CustomLinkButton>
-            </CardRight>
-          </PortfolioCard>
+              </a>
+            </div>
+          </div>
 
-          <EmptyContainer />
+          <div className="empty-container" />
 
           {/* GoTemplate */}
-          <PortfolioCard>
-            <CardLeft>
-              <ProjectImg src="/images/gotemplate.png" marginTop />
-              <p style={{ textAlign: 'center', marginTop: '15px' }}>
-                PHP | Laravel | SCSS | MySQL
-              </p>
-            </CardLeft>
+          <div className="portfolio-card">
+            <div className="card-left">
+              <img className="project-img mt-20" src="/images/gotemplate.png" />
+              <p className="tag">PHP | Laravel | SCSS | MySQL</p>
+            </div>
 
-            <CardRight>
-              <Title>GoTemplate</Title>
-              <Subtitle>
-                Easy Way To Sell Your Digital Products and Templates
-              </Subtitle>
-              <Description>
+            <div className="card-right">
+              <h1 className="title">GoTemplate</h1>
+              <h2>Easy Way To Sell Your Digital Products and Templates</h2>
+              <p className="mt-20">
                 GoTemplate is a digital platform where one can buy and sell
                 his/her digital products like as web template, themes,
                 illustrations e.t.c.
@@ -189,106 +195,28 @@ const Portfolio = () => (
                 From design to development, I do the Design and Frontend part of
                 this project. I needed to work some Backend part of this project
                 also.
-              </Description>
+              </p>
 
-              <CustomLinkButton
+              <a
+                className="custom-btn"
                 href="https://www.figma.com/proto/iuipBt8sRnacTrBqoI4wO1/Landing-Page?node-id=4%3A0&scaling=min-zoom&hide-ui=1"
                 target="_blank"
               >
                 Design
-              </CustomLinkButton>
-              <CustomLinkButton
+              </a>
+              <a
+                className="custom-btn"
                 href="http://gotemplate.emediaglobal.biz/"
                 target="_blank"
               >
                 Live
-              </CustomLinkButton>
-            </CardRight>
-          </PortfolioCard>
-        </PortfolioItemContainer>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </BaseLayout>
   </>
 );
-
-const EmptyContainer = styled.div`
-  width: 100%;
-  height: 100px;
-`;
-
-const PortfolioCard = styled.div`
-  width: 80%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  ${mediaQueries('phone-md-lg')`
-    width: 100%;
-  `}
-  ${mediaQueries('tab-port')`
-    width: 100%;
-  `}
-`;
-
-const PortfolioItemContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 30px 0;
-`;
-
-const CardLeft = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const CardRight = styled.div`
-  width: 100%;
-`;
-
-const ProjectImg = styled.img`
-  width: 70%;
-  max-height: 500px;
-  margin-top: ${(props) => (props.marginTop ? '20px' : '0')};
-  border-radius: 5px;
-  ${mediaQueries('tab-port')`
-    width: 85%;
-  `}
-  ${mediaQueries('phone-md-lg')`
-    width: 100%;
-  `}
-`;
-
-const Title = styled.h1`
-  color: #ffa10a;
-`;
-
-const Subtitle = styled.h2``;
-
-const Description = styled.p`
-  margin-top: 20px;
-`;
-
-const CustomLinkButton = styled.a`
-  padding: 5px 10px;
-  border: 3px solid #ffa10a;
-  background-color: #fff;
-  min-width: 100px;
-  color: #ffa10a;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  margin-right: 20px;
-
-  &:hover {
-    background-color: #ffa10a;
-    color: #fff;
-    text-decoration: none;
-  }
-`;
 
 export default Portfolio;
