@@ -11,6 +11,7 @@
   padding: 1.5rem 1rem;
   transition: transform 0.35s ease-out;
   z-index: 1001;
+  transform: translateX(-105%);
 
   .close {
     font-size: 0.8rem;
@@ -36,8 +37,8 @@
   }
 }
 .tl-x0 {
-  transform: translateX(0%);
+  transform: translateX(0%) !important;
 }
 .tl-x105 {
-  transform: translateX(-105%);
+  transform: translateX(-105%) !important;
 }
