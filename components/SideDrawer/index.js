@@ -1,31 +1,27 @@
 import Link from 'next/link';
-import {
-  NavContainer,
-  CloseSideDrawer,
-  BrandName,
-  RouteUList,
-  RouteList,
-} from './SideDrawer.styles';
 import RouteData from '../../shared/routeData';
 
 const SideDrawer = ({ isOpen, toggleSideDrawerHandler }) => {
   return (
-    <NavContainer isOpen={isOpen}>
-      <CloseSideDrawer onClick={toggleSideDrawerHandler}>
+    <nav
+      className={`sidedrawer-container ${isOpen ? 'tl-x0' : 'tl-x105'}`}
+      isOpen={isOpen}
+    >
+      <span className="close" onClick={toggleSideDrawerHandler}>
         &#x274C;
-      </CloseSideDrawer>
-      <BrandName>Abdur Rahman Robin</BrandName>
+      </span>
+      <p className="brand-name">Abdur Rahman Robin</p>
 
-      <RouteUList>
+      <ul className="route-ulist">
         {RouteData.map((item, index) => (
-          <RouteList key={index}>
+          <li className="route-list" key={index}>
             <Link href={item.path} passHref>
               <a>{item.route}</a>
             </Link>
-          </RouteList>
+          </li>
         ))}
-      </RouteUList>
-    </NavContainer>
+      </ul>
+    </nav>
   );
 };
 

@@ -1,0 +1,43 @@
+.sidedrawer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100vh;
+  box-shadow: 1px 0 7px rgba(#000, 0.3);
+  width: 65%;
+  max-width: 315px;
+  z-index: 999;
+  padding: 1.5rem 1rem;
+  transition: transform 0.35s ease-out;
+  z-index: 1001;
+
+  .close {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    cursor: pointer;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  .route-ulist {
+    list-style: none;
+    padding-left: 0.7rem;
+  }
+
+  .route-list {
+    margin-bottom: 0.5rem;
+  }
+}
+.tl-x0 {
+  transform: translateX(0%);
+}
+.tl-x105 {
+  transform: translateX(-105%);
+}

@@ -1,0 +1,55 @@
+@import './media-query.scss';
+
+.contact {
+  &-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      @include respond('phone-lg') {
+        flex-direction: column;
+      }
+      &__left {
+        background: linear-gradient(
+          134deg,
+          rgb(106, 152, 240) 0%,
+          rgb(73, 97, 220) 99%
+        );
+        width: 30%;
+        min-height: 250px;
+        max-height: 250px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 15px 10px;
+        @include respond('phone-md-lg') {
+          width: 70%;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 5px;
+        }
+      }
+      &__right {
+        width: 60%;
+        min-height: 300px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        padding: 25px 15px;
+        @include respond('phone-md-lg') {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

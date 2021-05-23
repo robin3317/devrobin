@@ -1,7 +1,5 @@
-import { BackdropContainer } from './Backdrop.styles';
-
 const Backdrop = ({ toggleSideDrawerHandler }) => (
-  <BackdropContainer onClick={toggleSideDrawerHandler}></BackdropContainer>
+  <div className="backdrop" onClick={toggleSideDrawerHandler}></div>
 );
 
 export default Backdrop;

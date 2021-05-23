@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import Head from 'next/head';
-import Link from 'next/link';
 import BaseLayout from '../components/BaseLayout';
 import SectionTitle from '../components/SectionTitle';
-import { mediaQueries } from '../shared/styles/mediaQueries';
 
 const Video = () => (
   <>
@@ -12,196 +10,155 @@ const Video = () => (
     </Head>
 
     <BaseLayout>
-      <VideoContainer>
+      <div className="video section-container">
         <SectionTitle title="Video" />
 
-        <VideoBody>
+        <div className="video-body">
           {/* Flutter zero to infinity */}
-          <CardContainer>
+          <div className="card-container">
             <a
               href="https://www.youtube.com/playlist?list=PLAqczZ5-OdVKJOBskWc_zjsJFwcRlEkzO"
               target="_blank"
             >
-              <CardThumbnail src="./images/v0_flutter_tutorial.jpg" />
+              <img
+                className="card-thumbnail"
+                src="./images/v0_flutter_tutorial.jpg"
+              />
             </a>
-            <CardBody>
-              <CardTitle
+            <div className="p-10">
+              <a
+                className="pointer"
                 href="https://www.youtube.com/playlist?list=PLAqczZ5-OdVKJOBskWc_zjsJFwcRlEkzO"
                 target="_blank"
               >
                 Flutter Tutorial - Zero to Infinity
-              </CardTitle>
-              <CardDescription>
+              </a>
+              <p className="description">
                 From this tutorial series you will be able to build iOS and
                 Android Apps with a Single Code base.
-              </CardDescription>
-            </CardBody>
-            <CardFooter>
-              <FooterContent>63 Lectures</FooterContent>
-              <FooterContent>13 Hours</FooterContent>
-            </CardFooter>
-          </CardContainer>
+              </p>
+            </div>
+            <div className="footer">
+              <p className="footer-content">63 Lectures</p>
+              <p className="footer-content">13 Hours</p>
+            </div>
+          </div>
 
           {/* Dart Programming Language */}
-          <CardContainer>
+          <div className="card-container">
             <a
               href="https://www.youtube.com/playlist?list=PLAqczZ5-OdVIMZYeryirjRzAizx9ik6TZ"
               target="_blank"
             >
-              <CardThumbnail src="./images/v_dart.png" />
+              <img className="card-thumbnail" src="./images/v_dart.png" />
             </a>
-            <CardBody>
-              <CardTitle
+            <div className="p-10">
+              <a
+                className="pointer"
                 href="https://www.youtube.com/playlist?list=PLAqczZ5-OdVIMZYeryirjRzAizx9ik6TZ"
                 target="_blank"
               >
                 Dart Programming Language
-              </CardTitle>
-              <CardDescription>
+              </a>
+              <p className="description">
                 This tutorial series is all about Google Dart Programming
                 Language. You can find all the topics related to dart
                 programming...
-              </CardDescription>
-            </CardBody>
-            <CardFooter>
-              <FooterContent>35 Lectures</FooterContent>
-              <FooterContent>7 Hours</FooterContent>
-            </CardFooter>
-          </CardContainer>
+              </p>
+            </div>
+            <div className="footer">
+              <p className="footer-content">35 Lectures</p>
+              <p className="footer-content">7 Hours</p>
+            </div>
+          </div>
 
           {/* Avengers App */}
-          <CardContainer>
+          <div className="card-container">
             <a
               href="https://www.youtube.com/playlist?list=PLAqczZ5-OdVK2HvZh0UAsIhxn23wRjcZF"
               target="_blank"
             >
-              <CardThumbnail src="./images/v2_flutter_avengers.png" />
+              <img
+                className="card-thumbnail"
+                src="./images/v2_flutter_avengers.png"
+              />
             </a>
-            <CardBody>
-              <CardTitle
+            <div className="p-10">
+              <a
+                className="pointer"
                 href="https://www.youtube.com/playlist?list=PLAqczZ5-OdVK2HvZh0UAsIhxn23wRjcZF"
                 target="_blank"
               >
                 Flutter Avengers App
-              </CardTitle>
-              <CardDescription>
+              </a>
+              <p className="description">
                 From this flutter tutorial bangla series, you can learn how to
                 develop a simple flutter app with the combination of some...
-              </CardDescription>
-            </CardBody>
-            <CardFooter>
-              <FooterContent>7 Lectures</FooterContent>
-              <FooterContent>2 Hours</FooterContent>
-            </CardFooter>
-          </CardContainer>
+              </p>
+            </div>
+            <div className="footer">
+              <p className="footer-content">7 Lectures</p>
+              <p className="footer-content">2 Hours</p>
+            </div>
+          </div>
 
           {/* Color Guessing Game */}
-          <CardContainer>
+          <div className="card-container">
             <a href="https://youtu.be/83g6rPtJtno" target="_blank">
-              <CardThumbnail src="./images/v3_color_guessing_game.jpg" />
+              <img
+                className="card-thumbnail"
+                src="./images/v3_color_guessing_game.jpg"
+              />
             </a>
-            <CardBody>
-              <CardTitle href="https://youtu.be/83g6rPtJtno" target="_blank">
+            <div className="p-10">
+              <a
+                className="pointer"
+                href="https://youtu.be/83g6rPtJtno"
+                target="_blank"
+              >
                 Flutter Color Guessing Game
-              </CardTitle>
-              <CardDescription>
+              </a>
+              <p className="description">
                 In this tutorial i build a simple color guessing app from
                 scratch. Lots of concepts are discussed in this video like as...
-              </CardDescription>
-            </CardBody>
-            <CardFooter>
-              <FooterContent>Single Lecture</FooterContent>
-              <FooterContent>1:29 Hours</FooterContent>
-            </CardFooter>
-          </CardContainer>
+              </p>
+            </div>
+            <div className="footer">
+              <p className="footer-content">Single Lecture</p>
+              <p className="footer-content">1:29 Hours</p>
+            </div>
+          </div>
 
           {/* Brain Treaser */}
-          <CardContainer>
+          <div className="card-container">
             <a href="https://youtu.be/OMbhQKpxX5g" target="_blank">
-              <CardThumbnail src="./images/v1_brain_teaser.png" />
+              <img
+                className="card-thumbnail"
+                src="./images/v1_brain_teaser.png"
+              />
             </a>
-            <CardBody>
-              <CardTitle href="https://youtu.be/OMbhQKpxX5g" target="_blank">
+            <div className="p-10">
+              <a
+                className="pointer"
+                href="https://youtu.be/OMbhQKpxX5g"
+                target="_blank"
+              >
                 Flutter Brain-Teaser Game
-              </CardTitle>
-              <CardDescription>
+              </a>
+              <p className="description">
                 Brain-Teaser or Sharp Your Brain is a simple math base game
                 whcih can help you to think quickly.
-              </CardDescription>
-            </CardBody>
-            <CardFooter>
-              <FooterContent>Single Lecture</FooterContent>
-              <FooterContent>1:21 Hours</FooterContent>
-            </CardFooter>
-          </CardContainer>
-        </VideoBody>
-      </VideoContainer>
+              </p>
+            </div>
+            <div className="footer">
+              <p className="footer-content">Single Lecture</p>
+              <p className="footer-content">1:21 Hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </BaseLayout>
   </>
 );
-
-const VideoContainer = styled.div`
-  width: 100%;
-  max-width: 1400px;
-  margin: 70px auto 0;
-  ${mediaQueries('phone-md-lg')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-port')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-901-to-1420')`
-    width: 90%;
-  `}
-`;
-
-const VideoBody = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
-const CardContainer = styled.div`
-  box-shadow: -10px 10px 14px -5px rgb(25 42 70 / 13%);
-  border-radius: 5px;
-  max-width: 350px;
-  margin: 20px;
-`;
-
-const CardThumbnail = styled.img`
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 100%;
-  height: 185px;
-`;
-
-const CardBody = styled.div`
-  padding: 10px;
-`;
-
-const CardTitle = styled.a`
-  cursor: pointer;
-`;
-
-const CardDescription = styled.p`
-  font-size: 16px;
-`;
-
-const CardFooter = styled.div`
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: space-between;
-`;
-
-const FooterContent = styled.p`
-  padding: 10px;
-  margin: 0;
-  font-size: 14px;
-`;
-
-const SizedBox = styled.div`
-  width: 100%;
-  height: 30px;
-`;
 
 export default Video;

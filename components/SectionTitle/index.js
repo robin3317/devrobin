@@ -1,12 +1,10 @@
-import { SectionTitleContainer, Title, BorderBottom } from './SectionTitle.styles'
-
 const SectionTitle = ({ title }) => (
-  <SectionTitleContainer>
-    <Title>
+  <div className="title-container">
+    <div className="title">
       {title}
-      <BorderBottom />
-    </Title>
-  </SectionTitleContainer>
-)
+      <div className="border-bottom" />
+    </div>
+  </div>
+);
 
-export default SectionTitle
+export default SectionTitle;

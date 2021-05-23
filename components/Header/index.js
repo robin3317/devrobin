@@ -1,7 +1,6 @@
-import Link from "next/link";
-import { HeaderContainer, HeaderWrapper, CustomNavItem } from "./Header.styles";
-import Hamburger from "../Hamburger";
-import { Navbar, Nav, NavbarBrand } from "react-bootstrap";
+import Link from 'next/link';
+import Hamburger from '../Hamburger';
+import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
 
 const Logo = () => (
   <svg
@@ -19,15 +18,15 @@ const Logo = () => (
 );
 
 const Header = ({ toggleSideDrawerHandler }) => (
-  <HeaderContainer>
+  <Navbar className="header-container">
     <Hamburger toggleSideDrawerHandler={toggleSideDrawerHandler} />
 
-    <HeaderWrapper>
+    <div className="header-wrapper">
       <NavbarBrand>
         <Link href="/" passHref>
-          <CustomNavItem>
+          <a>
             <Logo />
-          </CustomNavItem>
+          </a>
         </Link>
       </NavbarBrand>
 
@@ -35,49 +34,49 @@ const Header = ({ toggleSideDrawerHandler }) => (
         <Nav className="ml-auto">
           <Nav.Item className="mr-4">
             <Link href="/" passHref>
-              <CustomNavItem>Home</CustomNavItem>
+              <a>Home</a>
             </Link>
           </Nav.Item>
 
           <Nav.Item className="mr-4">
             <Link href="/about" passHref>
-              <CustomNavItem>About Me</CustomNavItem>
+              <a>About Me</a>
             </Link>
           </Nav.Item>
 
           <Nav.Item className="mr-4">
             <Link href="/portfolio" passHref>
-              <CustomNavItem>Portfolio</CustomNavItem>
+              <a>Portfolio</a>
             </Link>
           </Nav.Item>
 
           <Nav.Item className="mr-4">
             <Link href="/timeline" passHref>
-              <CustomNavItem>Timeline</CustomNavItem>
+              <a>Timeline</a>
             </Link>
           </Nav.Item>
 
           <Nav.Item className="mr-4">
             <Link href="/blog" passHref>
-              <CustomNavItem>Blog</CustomNavItem>
+              <a>Blog</a>
             </Link>
           </Nav.Item>
 
           <Nav.Item className="mr-4">
             <Link href="/video" passHref>
-              <CustomNavItem>Video</CustomNavItem>
+              <a>Video</a>
             </Link>
           </Nav.Item>
 
           <Nav.Item className="mr-4">
             <Link href="/contact" passHref>
-              <CustomNavItem>Contact</CustomNavItem>
+              <a>Contact</a>
             </Link>
           </Nav.Item>
         </Nav>
       </Navbar>
-    </HeaderWrapper>
-  </HeaderContainer>
+    </div>
+  </Navbar>
 );
 
 export default Header;

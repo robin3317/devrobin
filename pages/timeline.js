@@ -1,6 +1,4 @@
-import styled from 'styled-components';
 import Head from 'next/head';
-import Link from 'next/link';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -15,7 +13,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import BaseLayout from '../components/BaseLayout';
 import SectionTitle from '../components/SectionTitle';
-import { mediaQueries } from '../shared/styles/mediaQueries';
 
 const Timeline = () => (
   <>
@@ -24,10 +21,10 @@ const Timeline = () => (
     </Head>
 
     <BaseLayout>
-      <TimelineContainer>
+      <div className="timeline section-container">
         <SectionTitle title="Timeline" />
 
-        <TimelineBody>
+        <div className="timeline-body">
           <h3 style={{ fontSize: '22px', marginTop: '10px' }}>
             MY ROAD TO GLORY!
           </h3>
@@ -52,26 +49,30 @@ const Timeline = () => (
               icon={<FontAwesomeIcon icon={faBriefcase} />}
               position="right"
             >
-              <CustomTimelineTag bgColor="rgb(33, 150, 243)">
+              <div
+                className="tag"
+                style={{ backgroundColor: 'rgb(33, 150, 243)' }}
+              >
                 JOB
-              </CustomTimelineTag>
-              <Title className="vertical-timeline-element-title">
+              </div>
+              <h3 className="vertical-timeline-element-title title">
                 Software Developer
-              </Title>
-              <Subtitle className="vertical-timeline-element-subtitle">
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle subtitle">
                 Daffodil International University
-              </Subtitle>
+              </h4>
               <p>
                 Develop and maintain different websites of Daffodil
                 International University and Daffodil Family as and when
                 required.
               </p>
-              <ExternalLink
+              <a
+                className="external-link"
                 href="http://daffodilvarsity.edu.bd/"
                 target="_blank"
               >
                 Company website <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
 
@@ -88,22 +89,29 @@ const Timeline = () => (
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               icon={<FontAwesomeIcon icon={faBriefcase} />}
             >
-              <CustomTimelineTag bgColor="rgb(33, 150, 243)">
+              <div
+                className="tag"
+                style={{ backgroundColor: 'rgb(33, 150, 243)' }}
+              >
                 JOB
-              </CustomTimelineTag>
-              <Title className="vertical-timeline-element-title">
+              </div>
+              <h3 className="vertical-timeline-element-title title">
                 Software Developer
-              </Title>
-              <Subtitle className="vertical-timeline-element-subtitle">
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle subtitle">
                 Corona Engineering Ltd.
-              </Subtitle>
+              </h4>
               <p>
                 Developing a WebRTC based one click digital video classroom
                 solution, firstime in Bangladesh.
               </p>
-              <ExternalLink href="https://edutechs.org/" target="_blank">
+              <a
+                className="external-link"
+                href="https://edutechs.org/"
+                target="_blank"
+              >
                 Check it out here <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
 
@@ -121,22 +129,29 @@ const Timeline = () => (
               icon={<FontAwesomeIcon icon={faBriefcase} />}
               position="right"
             >
-              <CustomTimelineTag bgColor="rgb(33, 150, 243)">
+              <div
+                className="tag"
+                style={{ backgroundColor: 'rgb(33, 150, 243)' }}
+              >
                 JOB
-              </CustomTimelineTag>
-              <Title className="vertical-timeline-element-title">
+              </div>
+              <h3 className="vertical-timeline-element-title title">
                 Junior Web Developer
-              </Title>
-              <Subtitle className="vertical-timeline-element-subtitle">
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle subtitle">
                 Gain Solutions
-              </Subtitle>
+              </h4>
               <p>
                 Developed a Customer Relationship Management system using
                 React-Redux-NodeJS.
               </p>
-              <ExternalLink href="https://gain.solutions/" target="_blank">
+              <a
+                className="external-link"
+                href="https://gain.solutions/"
+                target="_blank"
+              >
                 Company website <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
 
@@ -153,26 +168,30 @@ const Timeline = () => (
               iconStyle={{ background: 'rgb(1, 143, 105)', color: '#fff' }}
               icon={<FontAwesomeIcon icon={faUniversity} />}
             >
-              <CustomTimelineTag bgColor="rgb(1, 143, 105)">
+              <div
+                className="tag"
+                style={{ backgroundColor: 'rgb(1, 143, 105)' }}
+              >
                 EDUCATION
-              </CustomTimelineTag>
-              <Title className="vertical-timeline-element-title">
+              </div>
+              <h3 className="vertical-timeline-element-title title">
                 B.sc in CSE, 3.57/4.00
-              </Title>
-              <Subtitle className="vertical-timeline-element-subtitle">
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle subtitle">
                 Daffodil International University
-              </Subtitle>
+              </h4>
               <p>
                 I completed my B.Sc from Daffodil International University under
                 Computer Science And Engineering department. I completed 60
                 courses including Lab with total credit 148.
               </p>
-              <ExternalLink
+              <a
+                className="external-link"
                 href="http://daffodilvarsity.edu.bd/"
                 target="_blank"
               >
                 University website <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
 
@@ -190,17 +209,20 @@ const Timeline = () => (
               icon={<FontAwesomeIcon icon={faBlog} />}
               position="right"
             >
-              <CustomTimelineTag bgColor="black">MEDIUM</CustomTimelineTag>
+              <div className="tag" style={{ backgroundColor: 'black' }}>
+                MEDIUM
+              </div>
               <p>
                 Write first Medium post about my experience to learn
                 programming.
               </p>
-              <ExternalLink
+              <a
+                className="external-link"
                 href="https://medium.com/@robin4java/my-journey-and-one-common-mistake-we-are-doing-when-learning-programming-a04175c75f64"
                 target="_blank"
               >
                 Check it out here <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
 
@@ -217,14 +239,17 @@ const Timeline = () => (
               iconStyle={{ background: 'red', color: '#fff' }}
               icon={<FontAwesomeIcon icon={faVideo} />}
             >
-              <CustomTimelineTag bgColor="red">YOUTUBE</CustomTimelineTag>
+              <div className="tag" style={{ backgroundColor: 'red' }}>
+                YOUTUBE
+              </div>
               <p>Upload first YouTube video related to Flutter Development.</p>
-              <ExternalLink
+              <a
+                className="external-link"
                 href="https://www.youtube.com/c/codeonces"
                 target="_blank"
               >
                 Channel link <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
 
@@ -242,23 +267,30 @@ const Timeline = () => (
               icon={<FontAwesomeIcon icon={faUniversity} />}
               position="right"
             >
-              <CustomTimelineTag bgColor="rgb(1, 143, 105)">
+              <div
+                className="tag"
+                style={{ backgroundColor: 'rgb(1, 143, 105)' }}
+              >
                 EDUCATION
-              </CustomTimelineTag>
-              <Title className="vertical-timeline-element-title">
+              </div>
+              <h3 className="vertical-timeline-element-title title">
                 H.S.C in Science, 5.00/5.00
-              </Title>
-              <Subtitle className="vertical-timeline-element-subtitle">
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle subtitle">
                 Ispahani Public School &amp; College, Cumilla
-              </Subtitle>
+              </h4>
               <p>
                 I passed Higher Secondary School Certificate Examination from
                 Ispahani Public School &amp; College under Science group in
                 2012.
               </p>
-              <ExternalLink href="http://www.ipsc.edu.bd/" target="_blank">
+              <a
+                className="external-link"
+                href="http://www.ipsc.edu.bd/"
+                target="_blank"
+              >
                 College website <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
 
@@ -275,74 +307,35 @@ const Timeline = () => (
               iconStyle={{ background: 'rgb(1, 143, 105)', color: '#fff' }}
               icon={<FontAwesomeIcon icon={faUniversity} />}
             >
-              <CustomTimelineTag bgColor="rgb(1, 143, 105)">
+              <div
+                className="tag"
+                style={{ backgroundColor: 'rgb(1, 143, 105)' }}
+              >
                 EDUCATION
-              </CustomTimelineTag>
-              <Title className="vertical-timeline-element-title">
+              </div>
+              <h3 className="vertical-timeline-element-title title">
                 S.S.C in Science, 5.00/5.00
-              </Title>
-              <Subtitle className="vertical-timeline-element-subtitle">
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle subtitle">
                 Ispahani Public School &amp; College, Cumilla
-              </Subtitle>
+              </h4>
               <p>
                 I passed Secondary School Certificate Examination from Ispahani
                 Public School &amp; College under Science group in 2010.
               </p>
-              <ExternalLink href="http://www.ipsc.edu.bd/" target="_blank">
+              <a
+                className="external-link"
+                href="http://www.ipsc.edu.bd/"
+                target="_blank"
+              >
                 School website <FontAwesomeIcon icon={faArrowRight} />
-              </ExternalLink>
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
-        </TimelineBody>
-      </TimelineContainer>
+        </div>
+      </div>
     </BaseLayout>
   </>
 );
-
-const Title = styled.h3`
-  font-size: 24px;
-`;
-
-const Subtitle = styled.h4`
-  font-size: 20px;
-`;
-
-const TimelineContainer = styled.div`
-  width: 100%;
-  max-width: 1400px;
-  margin: 70px auto 0;
-  ${mediaQueries('phone-md-lg')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-port')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-901-to-1420')`
-    width: 90%;
-  `}
-`;
-
-const TimelineBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`;
-
-const CustomTimelineTag = styled.div`
-  display: inline-block;
-  margin-bottom: 3px;
-  background-color: ${(props) => props.bgColor};
-  color: #fff;
-  font-size: 14px;
-  padding: 5px;
-  border-radius: 3px;
-`;
-
-const ExternalLink = styled.a`
-  text-decoration: none;
-  text-align: right;
-  display: block;
-`;
 
 export default Timeline;

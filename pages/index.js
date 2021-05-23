@@ -13,27 +13,28 @@ export default function Home() {
 
       <main>
         <BaseLayout>
-          <HomeContainer>
-            <HomeLeftContainer>
-              <TriangleWrapper>
-                <Triangle />
-                <Avatar
+          <div className="home">
+            <div className="home-left">
+              <div className="triangle-wrapper">
+                <div className="triangle" />
+                <img
+                  className="home-avatar"
                   src="/images/avatar_robin.png"
                   alt="Abdur Rahman Robin | Codeonces"
                 />
-              </TriangleWrapper>
+              </div>
 
-              <InfoContainer>
-                <Name>ABDUR RAHMAN ROBIN</Name>
-                <Designation>FULL STACK SOFTWARE DEVELOPER</Designation>
-                <Resume href="./cv/cv.txt" download>
+              <div className="info">
+                <h1 className="mt-10">ABDUR RAHMAN ROBIN</h1>
+                <h2>FULL STACK SOFTWARE DEVELOPER</h2>
+                <a className="resume-btn" href="./cv/cv.txt" download>
                   Download Resume
-                </Resume>
-              </InfoContainer>
-            </HomeLeftContainer>
+                </a>
+              </div>
+            </div>
 
-            <HomeRightContainer>
-              <Intro>
+            <div className="home-right">
+              <div className="home-right__intro">
                 <div>
                   <p>Class Myself {'{'}</p>
                   <p style={{ paddingLeft: 30 }}>constructor() {'{'}</p>
@@ -46,9 +47,9 @@ export default function Home() {
                   <p style={{ paddingLeft: 30 }}>{'}'}</p>
                   <p>{'}'}</p>
                 </div>
-              </Intro>
+              </div>
 
-              <Description>
+              <div className="home-right__description">
                 <p>
                   <span style={{ color: '#1078EE' }}>console.log(</span>
                   {'`'}Hello &amp; Welcome, my name is{' '}
@@ -64,10 +65,11 @@ export default function Home() {
                   please feel free to contact.{'`'}
                   <span style={{ color: '#1078EE' }}>)</span>;
                 </p>
-              </Description>
+              </div>
 
-              <ContactContainer>
-                <ContactItem
+              <div className="home-right__contact">
+                <a
+                  className="mr-20"
                   target="_blank"
                   href="mailto:abdurrahmanrobin47@gmail.com"
                 >
@@ -76,9 +78,10 @@ export default function Home() {
                     alt="Abdur Rahman Robin | Gmail"
                     src="https://img.icons8.com/color/40/000000/gmail.png"
                   />
-                </ContactItem>
+                </a>
 
-                <ContactItem
+                <a
+                  className="mr-20"
                   target="_blank"
                   href="https://www.github.com/robin3317"
                 >
@@ -87,9 +90,10 @@ export default function Home() {
                     alt="Abdur Rahman Robin | Github"
                     src="https://img.icons8.com/fluent/40/000000/github.png"
                   />
-                </ContactItem>
+                </a>
 
-                <ContactItem
+                <a
+                  className="mr-20"
                   target="_blank"
                   href="https://stackoverflow.com/users/7387089/robin?tab=profile"
                 >
@@ -98,9 +102,10 @@ export default function Home() {
                     alt="Abdur Rahman Robin | Stackoverflow"
                     src="https://img.icons8.com/color/40/000000/stackoverflow.png"
                   />
-                </ContactItem>
+                </a>
 
-                <ContactItem
+                <a
+                  className="mr-20"
                   target="_blank"
                   href="https://www.linkedin.com/in/robin4java/"
                 >
@@ -109,9 +114,10 @@ export default function Home() {
                     alt="Abdur Rahman Robin | Linkedin"
                     src="https://img.icons8.com/color/40/000000/linkedin.png"
                   />
-                </ContactItem>
+                </a>
 
-                <ContactItem
+                <a
+                  className="mr-20"
                   target="_blank"
                   href="https://twitter.com/robin4java"
                 >
@@ -120,134 +126,24 @@ export default function Home() {
                     alt="Abdur Rahman Robin | Twitter"
                     src="https://img.icons8.com/color/40/000000/twitter.png"
                   />
-                </ContactItem>
+                </a>
 
-                <ContactItem target="_blank" href="https://fb.com/robin4java">
+                <a
+                  className="mr-20"
+                  target="_blank"
+                  href="https://fb.com/robin4java"
+                >
                   <img
                     align="left"
                     alt="Abdur Rahman Robin | Facebook"
                     src="https://img.icons8.com/color/40/000000/facebook-new.png"
                   />
-                </ContactItem>
-              </ContactContainer>
-            </HomeRightContainer>
-          </HomeContainer>
+                </a>
+              </div>
+            </div>
+          </div>
         </BaseLayout>
       </main>
     </div>
   );
 }
-
-const HomeContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1400px;
-
-  ${mediaQueries('phone-md-lg')`
-    flex-direction: column;
-    align-items: center;
-  `}
-  ${mediaQueries('tab-port')`
-    flex-direction: column;
-    align-items: center;
-  `}
-  ${mediaQueries('tab-901-to-1420')`
-    width: 90%;
-  `}
-`;
-
-const HomeLeftContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  ${mediaQueries('phone-md-lg')`
-    width: 100%;
-  `}
-  ${mediaQueries('tab-port')`
-    width: 100%;
-  `}
-`;
-const HomeRightContainer = styled.div`
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  ${mediaQueries('phone-md-lg')`
-    width: 100%;
-    align-items: center;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-  `}
-  ${mediaQueries('tab-port')`
-    width: 100%;
-    align-items: center;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-  `}
-`;
-
-const InfoContainer = styled.div`
-  margin: 0 auto;
-`;
-
-const Triangle = styled.div`
-  clip-path: polygon(100% 0, 0 0, 50% 90%);
-  background-color: #5295e1;
-  width: 100%;
-  height: 45vh;
-  max-height: 400px;
-`;
-
-const TriangleWrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-`;
-
-const Avatar = styled.img`
-  position: absolute;
-  border-radius: 100%;
-  width: 280px;
-  height: 280px;
-`;
-
-const Name = styled.h1`
-  margin-top: 10px;
-`;
-
-const Designation = styled.h2``;
-
-const Resume = styled.a`
-  border: none;
-  outline: none;
-  color: #ffffff;
-  background-color: #5295e1;
-  padding: 7px 10px;
-  border-radius: 3px;
-  cursor: pointer;
-  &:hover {
-    color: #ffffff;
-  }
-`;
-
-const Intro = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 60px 0;
-`;
-
-const Description = styled.div`
-  line-height: 1.8;
-`;
-
-const ContactContainer = styled.div`
-  display: flex;
-  margin-top: 30px;
-`;
-
-const ContactItem = styled.a`
-  margin-right: 20px;
-`;

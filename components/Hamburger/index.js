@@ -1,23 +1,15 @@
-import {
-  HamburgerContainer,
-  LineContainer,
-  Line,
-  NavContainer,
-  BrandName,
-} from "./Hamburger.styles";
-
 const Hamburger = ({ toggleSideDrawerHandler }) => (
-  <HamburgerContainer>
-    <LineContainer onClick={toggleSideDrawerHandler}>
-      <Line />
-      <Line />
-      <Line />
-    </LineContainer>
+  <div className="hamburger-container">
+    <div className="line-container" onClick={toggleSideDrawerHandler}>
+      <div className="line" />
+      <div className="line" />
+      <div className="line" />
+    </div>
 
-    <NavContainer>
-      <BrandName>Abdur Rahman Robin</BrandName>
-    </NavContainer>
-  </HamburgerContainer>
+    <div className="nav-container">
+      <p className="brand-name">Abdur Rahman Robin</p>
+    </div>
+  </div>
 );
 
 export default Hamburger;

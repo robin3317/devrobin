@@ -1,0 +1,45 @@
+@import '../../shared/styles/media-query.scss';
+
+.hamburger-container {
+  background-color: rgb(248, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  height: 3.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @include respond('tab-land') {
+    display: none;
+  }
+  @include respond('all-desktop') {
+    display: none;
+  }
+
+  .line-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 15px;
+
+    .line {
+      height: 3px;
+      width: 22px;
+      background-color: #48586b;
+      margin: 2px 0;
+    }
+  }
+
+  .nav-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+    .brand-name {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+}

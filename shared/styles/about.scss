@@ -1,0 +1,104 @@
+@import './media-query.scss';
+
+.about {
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    @include respond('phone-lg') {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &-left {
+      width: 52%;
+      line-height: 1.8;
+      @include respond('phone-lg') {
+        width: 100%;
+      }
+
+      .highlighted-container {
+        display: flex;
+        align-items: center;
+
+        .v-hr {
+          background-color: #d89024;
+          width: 5px;
+          height: 30px;
+          margin-right: 20px;
+        }
+      }
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+      @include respond('phone-lg') {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .outline {
+        width: 160px;
+        height: 290px;
+        background-color: #5295e1;
+        position: absolute;
+        bottom: 0;
+        right: -15px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-skillset-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    .skillsets {
+      display: flex;
+      flex-direction: column;
+      .single-type-skillset__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    .section-header {
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
+
+  &-service-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .service-card-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      @include respond('phone-lg') {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .offer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .avatar {
+    width: 320px;
+    height: 330px;
+  }
+}

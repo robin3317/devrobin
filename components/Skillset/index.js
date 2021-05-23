@@ -1,10 +1,8 @@
-import { SkillsetContainer, Img, Title } from './Skillset.styles'
-
 const Skillset = ({ imgSrc, title }) => (
-  <SkillsetContainer>
-    <Img src={imgSrc} alt={title} />
-    <Title>{title}</Title>
-  </SkillsetContainer>
-)
+  <div className="skillset-container">
+    <img className="skillset-img" src={imgSrc} alt={title} />
+    <p>{title}</p>
+  </div>
+);
 
-export default Skillset
+export default Skillset;

@@ -1,4 +1,3 @@
-import styled, { css } from 'styled-components';
 import Head from 'next/head';
 import BaseLayout from '../components/BaseLayout';
 import SectionTitle from '../components/SectionTitle';
@@ -13,45 +12,46 @@ const About = () => (
     </Head>
 
     <BaseLayout>
-      <AboutContainer>
+      <div className="about section-container">
         <SectionTitle title="About" />
-        <Introduction>
-          <LeftIntro>
+        <div className="intro">
+          <div className="intro-left">
             <p>
               A motivated, passionate and experienced Full Stack Developer from
               Bangladesh, currently staying in Dhaka. I'm working with
               JavaScript, Flutter and Web Technology. I love to work with
               challenge, passion and new technology.
             </p>
-            <HighlightedContainer>
-              <VerticalHr />
+            <div className="highlighted-container">
+              <div className="v-hr" />
               <p>Love to convert thoughts into CODE.</p>
-            </HighlightedContainer>
+            </div>
             <p>
               I love to learn new technology and share my knowledge with others.
               In a nutshell, I am nothing but a learner. And I don't want to be
               perfect, I want to be honest about myself.
             </p>
-          </LeftIntro>
+          </div>
 
-          <RightIntro>
-            <AvatarContainer>
-              <Avatar
+          <div className="intro-right">
+            <p className="p-relative">
+              <img
+                className="avatar"
                 src="/images/avatar.png"
                 alt="Abdur Rahman Robin | Codeonces"
               />
-              <Outline />
-            </AvatarContainer>
-            <Name>ABDUR RAHMAN ROBIN</Name>
-            <Designation>FULL STACK SOFTWARE DEVELOPER</Designation>
-          </RightIntro>
-        </Introduction>
+              <div className="outline" />
+            </p>
+            <h1>ABDUR RAHMAN ROBIN</h1>
+            <h2 className="mt-0">FULL STACK SOFTWARE DEVELOPER</h2>
+          </div>
+        </div>
 
-        <SkillsetsContainer>
-          <SectionHeader>My Skillsets</SectionHeader>
+        <div className="about-skillset-container">
+          <h3 className="section-header">My Skillsets</h3>
 
-          <Skillsets>
-            <Development>
+          <div className="skillsets">
+            <div className="single-type-skillset__container">
               <Skillset
                 imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 title="Javascript"
@@ -89,9 +89,9 @@ const About = () => (
                 imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
                 title="Firebase"
               />
-            </Development>
+            </div>
 
-            <Design>
+            <div className="single-type-skillset__container">
               <Skillset imgSrc="./images/figma.svg" title="Figma" />
               <Skillset
                 imgSrc="https://www.adobe.com/content/dam/cc/icons/xd.svg"
@@ -105,58 +105,50 @@ const About = () => (
                 imgSrc="https://www.adobe.com/content/dam/cc/icons/pr_cc_app_RGB.svg"
                 title="Premier Pro"
               />
-            </Design>
-          </Skillsets>
-        </SkillsetsContainer>
+            </div>
+          </div>
+        </div>
 
-        <ServiceContainer>
-          <SectionHeader>Service Offers</SectionHeader>
+        <div className="about-service-container">
+          <h3 className="section-header">Service Offers</h3>
 
-          <ServiceCardContainer>
+          <div className="service-card-container">
             <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
-              <ServiceOfferCardContainer>
-                <CardIcon src="./images/s1.png" alt="web development" />
-                <CardTitle>WEB DEVELOPMENT</CardTitle>
-                <CardDescription>
-                  Any kind of web application you want to build.
-                </CardDescription>
-              </ServiceOfferCardContainer>
+              <div className="offer-container">
+                <img src="./images/s1.png" alt="web development" />
+                <p className="mt-10">WEB DEVELOPMENT</p>
+                <p>Any kind of web application you want to build.</p>
+              </div>
             </Card>
 
             <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
-              <ServiceOfferCardContainer>
-                <CardIcon src="./images/s2.png" alt="ui/ux design" />
-                <CardTitle>UI/UX DESIGN</CardTitle>
-                <CardDescription>
-                  Any kind of ui/ux design you want to build.
-                </CardDescription>
-              </ServiceOfferCardContainer>
+              <div className="offer-container">
+                <img src="./images/s2.png" alt="ui/ux design" />
+                <p className="mt-10">UI/UX DESIGN</p>
+                <p>Any kind of ui/ux design you want to build.</p>
+              </div>
             </Card>
 
             <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
-              <ServiceOfferCardContainer>
-                <CardIcon src="./images/s3.png" alt="app design" />
-                <CardTitle>APP DESIGN</CardTitle>
-                <CardDescription>
-                  Any kind of app design you want to build.
-                </CardDescription>
-              </ServiceOfferCardContainer>
+              <div className="offer-container">
+                <img src="./images/s3.png" alt="app design" />
+                <p className="mt-10">APP DESIGN</p>
+                <p>Any kind of app design you want to build.</p>
+              </div>
             </Card>
 
             <Card width="23.50%" maxWidth="300px">
-              <ServiceOfferCardContainer>
-                <CardIcon src="./images/s4.png" alt="mobile app development" />
-                <CardTitle>MOBILE APP DEVELOPMENT</CardTitle>
-                <CardDescription>
-                  Any kind of web application you want to build.
-                </CardDescription>
-              </ServiceOfferCardContainer>
+              <div className="offer-container">
+                <img src="./images/s4.png" alt="mobile app development" />
+                <p className="mt-10">MOBILE APP DEVELOPMENT</p>
+                <p>Any kind of web application you want to build.</p>
+              </div>
             </Card>
-          </ServiceCardContainer>
-        </ServiceContainer>
+          </div>
+        </div>
 
         {/* <FeedbackContainer>
-          <SectionHeader>Some Positive Feedback That Encourage Me</SectionHeader>
+          <h3 class="section-header">Some Positive Feedback That Encourage Me</h3>
 
           <FeedbackCardContainer>
             <Card width="30%" maxWidth="620px" style={{marginRight: '5%'}}>
@@ -208,203 +200,56 @@ const About = () => (
             </Card>
           </FeedbackCardContainer>
         </FeedbackContainer> */}
-      </AboutContainer>
+      </div>
     </BaseLayout>
   </>
 );
 
-const FeedbackContainer = styled.div`
-  margin-top: 50px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+// const FeedbackContainer = styled.div`
+//   margin-top: 50px;
+//   margin-bottom: 30px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// `;
 
-const FeedbackCardContainer = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-`;
+// const FeedbackCardContainer = styled.div`
+//   display: flex;
+//   width: 100%;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   margin-top: 20px;
+// `;
 
-const FeedbackHeader = styled.div`
-  display: flex;
-  align-items: center;
-`;
+// const FeedbackHeader = styled.div`
+//   display: flex;
+//   align-items: center;
+// `;
 
-const FeedbackAvatar = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 20px;
-`;
+// const FeedbackAvatar = styled.img`
+//   width: 80px;
+//   height: 80px;
+//   border-radius: 50%;
+//   margin-right: 20px;
+// `;
 
-const FeedbackIntro = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+// const FeedbackIntro = styled.div`
+//   display: flex;
+//   flex-direction: column;
+// `;
 
-const FeedbackName = styled.h4`
-  margin: 0;
-`;
+// const FeedbackName = styled.h4`
+//   margin: 0;
+// `;
 
-const FeedbackDesignation = styled.p`
-  margin: 0;
-`;
+// const FeedbackDesignation = styled.p`
+//   margin: 0;
+// `;
 
-const FeedbackCompany = styled.p`
-  margin: 0;
-`;
+// const FeedbackCompany = styled.p`
+//   margin: 0;
+// `;
 
-const FeedbackDescription = styled.p``;
-
-const AboutContainer = styled.div`
-  width: 100%;
-  max-width: 1400px;
-  margin: 70px auto 0;
-  ${mediaQueries('phone-md-lg')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-port')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-901-to-1420')`
-    width: 90%;
-  `}
-`;
-
-const Introduction = styled.div`
-  display: flex;
-  justify-content: space-between;
-  ${mediaQueries('phone-lg')`
-    flex-direction: column-reverse;
-    align-items: center;
-  `}
-`;
-
-const LeftIntro = styled.div`
-  width: 52%;
-  line-height: 1.8;
-  ${mediaQueries('phone-lg')`
-    width: 100%;
-  `}
-`;
-
-const RightIntro = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40%;
-  ${mediaQueries('phone-lg')`
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  `}
-`;
-
-const AvatarContainer = styled.div`
-  position: relative;
-`;
-
-const Outline = styled.div`
-  width: 160px;
-  height: 290px;
-  background-color: #5295e1;
-  position: absolute;
-  bottom: 0;
-  right: -15px;
-  z-index: -1;
-`;
-
-const Avatar = styled.img`
-  width: 320px;
-  height: 330px;
-`;
-
-const Name = styled.h1``;
-
-const Designation = styled.h2`
-  margin-top: 0;
-`;
-
-const HighlightedContainer = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const VerticalHr = styled.div`
-  background-color: #d89024;
-  width: 5px;
-  height: 30px;
-  margin-right: 20px;
-`;
-
-const SkillsetsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-`;
-
-const Skillsets = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const sectionStyles = css`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
-const Development = styled.div`
-  ${sectionStyles}
-`;
-
-const Design = styled.div`
-  ${sectionStyles}
-`;
-
-const SectionHeader = styled.h3`
-  font-size: 32px;
-  font-weight: 500;
-`;
-
-const ServiceContainer = styled.div`
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const ServiceCardContainer = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  ${mediaQueries('phone-lg')`
-    flex-direction: column;
-    align-items: center;
-  `}
-`;
-
-const ServiceOfferCardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const CardIcon = styled.img``;
-
-const CardTitle = styled.p`
-  margin-top: 10px;
-`;
-
-const CardDescription = styled.p``;
+// const FeedbackDescription = styled.p``;
 
 export default About;

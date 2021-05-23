@@ -1,8 +1,7 @@
-import { useState } from "react";
-import Header from "../Header";
-import { BaseLayoutContainer, TemporaryInfo } from "./BaseLayout.styles";
-import Backdrop from "../Backdrop";
-import SideDrawer from "../SideDrawer";
+import { useState } from 'react';
+import Header from '../Header';
+import Backdrop from '../Backdrop';
+import SideDrawer from '../SideDrawer';
 
 const BaseLayout = (props) => {
   const [isOpenSideDrawer, setIsOpenSideDrawer] = useState(false);
@@ -22,15 +21,15 @@ const BaseLayout = (props) => {
         <Backdrop toggleSideDrawerHandler={toggleSideDrawerHandler} />
       ) : null}
 
-      {/* <TemporaryInfo>
+      {/* <div className="temporary-info">
         <p>
           📢 I'm currently working on this project. Some features may not work
           as you expect! Sorry 🙏
         </p>
-      </TemporaryInfo> */}
+      </div> */}
 
       <Header toggleSideDrawerHandler={toggleSideDrawerHandler} />
-      <BaseLayoutContainer>{props.children}</BaseLayoutContainer>
+      <div className="base-layout-container">{props.children}</div>
 
       <style jsx global>
         {`

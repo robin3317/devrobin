@@ -1,0 +1,15 @@
+.title-container {
+  margin-bottom: 5px;
+
+  .title {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 500;
+
+    .border-bottom {
+      width: 60%;
+      background-color: #48586b;
+      height: 3px;
+    }
+  }
+}
