@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Head from 'next/head';
-import { Button } from 'react-bootstrap';
 import BaseLayout from '../components/BaseLayout';
 import SectionTitle from '../components/SectionTitle';
 import { mediaQueries } from '../shared/styles/mediaQueries';
@@ -12,7 +11,7 @@ const Portfolio = () => (
     </Head>
 
     <BaseLayout>
-      <PortfolioContainer>
+      <div className="portfolio-container">
         <SectionTitle title="Portfolio" />
 
         <PortfolioItemContainer>
@@ -207,25 +206,10 @@ const Portfolio = () => (
             </CardRight>
           </PortfolioCard>
         </PortfolioItemContainer>
-      </PortfolioContainer>
+      </div>
     </BaseLayout>
   </>
 );
-
-const PortfolioContainer = styled.div`
-  width: 100%;
-  max-width: 1400px;
-  margin: 70px auto 0;
-  ${mediaQueries('phone-md-lg')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-port')`
-    width: 90%;
-  `}
-  ${mediaQueries('tab-901-to-1420')`
-    width: 90%;
-  `}
-`;
 
 const EmptyContainer = styled.div`
   width: 100%;

@@ -1,0 +1,17 @@
+@import './media-query.scss';
+
+.portfolio-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 70px auto 0;
+
+  @include respond('phone-md-lg') {
+    width: 90%;
+  }
+  @include respond('tab-port') {
+    width: 90%;
+  }
+  @include respond('tab-901-to-1420') {
+    width: 90%;
+  }
+}
