@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import BaseLayout from '../components/BaseLayout';
 import SectionTitle from '../components/SectionTitle';
 
@@ -43,6 +44,10 @@ const Portfolio = () => (
               >
                 LIVE
               </a>
+
+              <Link href="/portfolio/edutechs-web">
+                <a className="custom-btn">Details</a>
+              </Link>
             </div>
           </div>
 
