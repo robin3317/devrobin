@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import RouteData from '../../shared/routeData';
+import { RouteData } from '../../pages/api/route';
 
 const SideDrawer = ({ isOpen, toggleSideDrawerHandler }) => {
   return (

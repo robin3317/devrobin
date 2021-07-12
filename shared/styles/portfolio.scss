@@ -43,18 +43,6 @@
         justify-content: center;
         align-items: center;
 
-        .project-img {
-          width: 70%;
-          max-height: 500px;
-          border-radius: 5px;
-          @include respond('tab-port') {
-            width: 85%;
-          }
-          @include respond('phone-md-lg') {
-            width: 100%;
-          }
-        }
-
         .tag {
           text-align: center;
           margin-top: 15px;
@@ -87,5 +75,17 @@
         }
       }
     }
+  }
+}
+
+.project-img {
+  width: 70%;
+  max-height: 500px;
+  border-radius: 5px;
+  @include respond('tab-port') {
+    width: 85%;
+  }
+  @include respond('phone-md-lg') {
+    width: 100%;
   }
 }
