@@ -57,6 +57,7 @@ const Portfolio = () => {
                         );
                       })}
 
+                      {/* Checking deployment */}
                       <Link
                         href={`/portfolio/[singleProject]`}
                         as={`/portfolio/${project.id}`}
