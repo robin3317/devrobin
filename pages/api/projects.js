@@ -7,10 +7,7 @@ const Projects = [
     heading: `Edutechs`,
     subHeading: `One click digital classroom solution`,
     shortDescription: `Edutechs is a one click digital video classroom solution along with all the 
-    features you need to be a successful teacher or to run a educational institution, first time in Bangladesh.
-    <br /><br />
-    I worked almost every part of this application, specially in Live Streaming, Signup-Signin, 
-    Topic Discussion and Chatting Section.`,
+    features you need to be a successful teacher or to run a educational institution, first time in Bangladesh.`,
     description: `Edutechs is a one click digital video classroom solution along with all the features 
     you need to be a successful teacher or to run a educational institution, first time in Bangladesh.
     <br /><br />
@@ -30,13 +27,7 @@ const Projects = [
     Ecosystem. Introduce your students to a seamless classroom to
     digital learning experience. Monitor their progress and extend
     your support truly beyond the classroom with our One-Click
-    Digital Streaming Technology.
-    <br />
-    <br />
-    Implement all the web features in Mobile Application. This
-    application is developed by ReactNative and we use NativeBase as
-    ReactNative UI library. This was a challenging experience,
-    because some apis were different than web!`,
+    Digital Streaming Technology.`,
     description: `Edutech is Bangladesh's first advanced Integrated Education
     Ecosystem. Introduce your students to a seamless classroom to
     digital learning experience. Monitor their progress and extend
@@ -60,14 +51,9 @@ const Projects = [
     heading: `Ecommerz BD`,
     subHeading: `An online shopping app`,
     shortDescription: `An online shopping application where you can buy your products
-    and pay bills online.
-    <br />
-    <br />
-    This is a practice project using ReactJS, React Hooks, React
-    Context API, Redux, Firebase, Stripe, Service Workers &amp; Web
-    Workers.`,
+    and pay bills online along with all the features an ecommerce should have.`,
     description: `An online shopping application where you can buy your products
-    and pay bills online.
+    and pay bills online along with all the features an ecommerce should have..
     <br />
     <br />
     This is a practice project using ReactJS, React Hooks, React
@@ -105,12 +91,7 @@ const Projects = [
     subHeading: `Easy Way To Sell Your Digital Products and Templates`,
     shortDescription: `GoTemplate is a digital platform where one can buy and sell
     his/her digital products like as web template, themes,
-    illustrations e.t.c.
-    <br />
-    <br />
-    From design to development, I do the Design and Frontend part of
-    this project. I needed to work some Backend part of this project
-    also.`,
+    illustrations e.t.c.`,
     description: `GoTemplate is a digital platform where one can buy and sell
     his/her digital products like as web template, themes,
     illustrations e.t.c.
