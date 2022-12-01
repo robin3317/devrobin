@@ -1,9 +1,8 @@
-import Head from 'next/head';
-import BaseLayout from '../components/BaseLayout';
-import SectionTitle from '../components/SectionTitle';
-import Skillset from '../components/Skillset';
-import Card from '../components/Card';
-import { mediaQueries } from '../shared/styles/mediaQueries';
+import Head from 'next/head'
+import BaseLayout from '../components/BaseLayout'
+import Card from '../components/Card'
+import SectionTitle from '../components/SectionTitle'
+import Skillset from '../components/Skillset'
 
 const About = () => (
   <>
@@ -12,18 +11,18 @@ const About = () => (
     </Head>
 
     <BaseLayout>
-      <div className="about section-container">
-        <SectionTitle title="About" />
-        <div className="intro">
-          <div className="intro-left">
+      <div className='about section-container'>
+        <SectionTitle title='About' />
+        <div className='intro'>
+          <div className='intro-left'>
             <p>
               A motivated, passionate and experienced Full Stack Developer from
               Bangladesh, currently staying in Dhaka. I'm working with
               JavaScript, Flutter and Web Technology. I love to work with
               challenge, passion and new technology.
             </p>
-            <div className="highlighted-container">
-              <div className="v-hr" />
+            <div className='highlighted-container'>
+              <div className='v-hr' />
               <p>Love to convert thoughts into CODE.</p>
             </div>
             <p>
@@ -33,114 +32,114 @@ const About = () => (
             </p>
           </div>
 
-          <div className="intro-right">
-            <p className="p-relative">
+          <div className='intro-right'>
+            <p className='p-relative'>
               <img
-                className="avatar"
-                src="/images/avatar.png"
-                alt="Abdur Rahman Robin | Codeonces"
+                className='avatar'
+                src='/images/avatar.png'
+                alt='Abdur Rahman Robin | Codeonces'
               />
-              <div className="outline" />
+              <div className='outline' />
             </p>
             <h1>ABDUR RAHMAN ROBIN</h1>
-            <h2 className="mt-0">FULL STACK SOFTWARE DEVELOPER</h2>
+            <h2 className='mt-0'>FULL STACK SOFTWARE DEVELOPER</h2>
           </div>
         </div>
 
-        <div className="about-skillset-container">
-          <h3 className="section-header">My Skillsets</h3>
+        <div className='about-skillset-container'>
+          <h3 className='section-header'>My Skillsets</h3>
 
-          <div className="skillsets">
-            <div className="single-type-skillset__container">
+          <div className='skillsets'>
+            <div className='single-type-skillset__container'>
               <Skillset
-                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                title="Javascript"
-              />
-              {/* <Skillset
-                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                title="Typescript"
-              /> */}
-              <Skillset
-                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                title="ReactJS"
+                imgSrc='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
+                title='Javascript'
               />
               <Skillset
-                imgSrc="https://redux.js.org/img/redux.svg"
-                title="Redux"
+                imgSrc='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png'
+                title='Typescript'
+              />
+              <Skillset
+                imgSrc='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
+                title='ReactJS'
+              />
+              <Skillset
+                imgSrc='https://redux.js.org/img/redux.svg'
+                title='Redux'
               />
               {/* <Skillset
                 imgSrc="https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png"
                 title="GraphQL"
               /> */}
               <Skillset
-                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
-                title="Node"
+                imgSrc='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png'
+                title='Node'
               />
-              <Skillset imgSrc="https://deno.land/logo.svg" title="Deno" />
+              {/* <Skillset imgSrc="https://deno.land/logo.svg" title="Deno" /> */}
               <Skillset
-                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png"
-                title="Flutter"
-              />
-              <Skillset
-                imgSrc="https://reactnative.dev/img/header_logo.svg"
-                title="React Native"
+                imgSrc='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png'
+                title='Flutter'
               />
               <Skillset
-                imgSrc="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-                title="Firebase"
+                imgSrc='https://reactnative.dev/img/header_logo.svg'
+                title='React Native'
+              />
+              <Skillset
+                imgSrc='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png'
+                title='Firebase'
               />
             </div>
 
-            <div className="single-type-skillset__container">
-              <Skillset imgSrc="./images/figma.svg" title="Figma" />
+            <div className='single-type-skillset__container'>
+              <Skillset imgSrc='./images/figma.svg' title='Figma' />
               <Skillset
-                imgSrc="https://www.adobe.com/content/dam/cc/icons/xd.svg"
-                title="Adobe XD"
+                imgSrc='https://www.adobe.com/content/dam/cc/icons/xd.svg'
+                title='Adobe XD'
               />
               <Skillset
-                imgSrc="https://www.adobe.com/content/dam/cc/icons/photoshop-mobile.svg"
-                title="Photoshop"
+                imgSrc='https://www.adobe.com/content/dam/cc/icons/photoshop-mobile.svg'
+                title='Photoshop'
               />
               <Skillset
-                imgSrc="https://www.adobe.com/content/dam/cc/icons/pr_cc_app_RGB.svg"
-                title="Premier Pro"
+                imgSrc='https://www.adobe.com/content/dam/cc/icons/pr_cc_app_RGB.svg'
+                title='Premier Pro'
               />
             </div>
           </div>
         </div>
 
-        <div className="about-service-container">
-          <h3 className="section-header">Service Offers</h3>
+        <div className='about-service-container'>
+          <h3 className='section-header'>Service Offers</h3>
 
-          <div className="service-card-container">
-            <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
-              <div className="offer-container">
-                <img src="./images/s1.png" alt="web development" />
-                <p className="mt-10">WEB DEVELOPMENT</p>
+          <div className='service-card-container'>
+            <Card width='23.50%' maxWidth='300px' style={{marginRight: '2%'}}>
+              <div className='offer-container'>
+                <img src='./images/s1.png' alt='web development' />
+                <p className='mt-10'>WEB DEVELOPMENT</p>
                 <p>Any kind of web application you want to build.</p>
               </div>
             </Card>
 
-            <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
-              <div className="offer-container">
-                <img src="./images/s2.png" alt="ui/ux design" />
-                <p className="mt-10">UI/UX DESIGN</p>
+            <Card width='23.50%' maxWidth='300px' style={{marginRight: '2%'}}>
+              <div className='offer-container'>
+                <img src='./images/s2.png' alt='ui/ux design' />
+                <p className='mt-10'>UI/UX DESIGN</p>
                 <p>Any kind of ui/ux design you want to build.</p>
               </div>
             </Card>
 
-            <Card width="23.50%" maxWidth="300px" style={{ marginRight: '2%' }}>
-              <div className="offer-container">
-                <img src="./images/s3.png" alt="app design" />
-                <p className="mt-10">APP DESIGN</p>
+            <Card width='23.50%' maxWidth='300px' style={{marginRight: '2%'}}>
+              <div className='offer-container'>
+                <img src='./images/s3.png' alt='app design' />
+                <p className='mt-10'>APP DESIGN</p>
                 <p>Any kind of app design you want to build.</p>
               </div>
             </Card>
 
-            <Card width="23.50%" maxWidth="300px">
-              <div className="offer-container">
-                <img src="./images/s4.png" alt="mobile app development" />
-                <p className="mt-10">MOBILE APP DEVELOPMENT</p>
+            <Card width='23.50%' maxWidth='300px'>
+              <div className='offer-container'>
+                <img src='./images/s4.png' alt='mobile app development' />
+                <p className='mt-10'>MOBILE APP DEVELOPMENT</p>
                 <p>Any kind of web application you want to build.</p>
               </div>
             </Card>
@@ -203,7 +202,7 @@ const About = () => (
       </div>
     </BaseLayout>
   </>
-);
+)
 
 // const FeedbackContainer = styled.div`
 //   margin-top: 50px;
@@ -252,4 +251,4 @@ const About = () => (
 
 // const FeedbackDescription = styled.p``;
 
-export default About;
+export default About
