@@ -1,30 +1,48 @@
+# Getting Started with this project
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Run on your machine
 
-First, run the development server:
+Please make sure you have following software installed in your system:
 
-```bash
-npm run dev
-# or
-yarn dev
+- Node.js
+- NPM / Yarn
+
+First you need to clone the repository:
+
+```
+$ git clone https://github.com/robin3317/devrobin.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then you have to install the necessary dependencies using either NPM or Yarn:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+$ npm i
+```
 
-## Learn More
+Or
 
-To learn more about Next.js, take a look at the following resources:
+```
+$ yarn
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Now you are ready to run the application. In the project directory, you can run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+$ npm run dev
+```
 
-## Deploy on Vercel
+This will run the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> I appreciate to create your own version of using this.
+
+### Created & Maintained with :heart: by Abdur Rahman Robin
+
+- [Facebook : Abdur Rahman Robin](https://www.facebook.com/robin4java)
+- [Twitter : @robin4java](https://twitter.com/robin4java)
+- [Linkedin : Abdur Rahman Robin](https://www.linkedin.com/in/robin4java/)
